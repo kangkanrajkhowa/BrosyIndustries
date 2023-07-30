@@ -33,54 +33,35 @@
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
       <div class="container-fluid d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <a href="{{ route('home') }}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1>HeroBiz<span>.</span></h1>
+          <h1>Brosy Industries<span>.</span></h1>
         </a>
 
         <nav id="navbar" class="navbar">
           <ul>
-
-            <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="index.html" class="active">Home 1 - index.html</a></li>
-                <li><a href="index-2.html">Home 2 - index-2.html</a></li>
-                <li><a href="index-3.html">Home 3 - index-3.html</a></li>
-                <li><a href="index-4.html">Home 4 - index-4.html</a></li>
-              </ul>
-            </li>
-
-            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-            <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-            <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+            <li><a href="{{ route('home') }}" class="nav-link active">Home</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('#about') }}">About</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('#services') }}">Services</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('#portfolio') }}">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="{{ route('certificate') }}">Certificate</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <li class="dropdown megamenu"><a href="javascript:void(0);"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
                 <li>
-                  <a href="#">Column 1 link 1</a>
-                  <a href="#">Column 1 link 2</a>
-                  <a href="#">Column 1 link 3</a>
+                  <a href="#">Agricultural Products</a>
+                  <a href="#">Product Name 1</a>
+                  <a href="#">Product Name 2</a>
                 </li>
                 <li>
-                  <a href="#">Column 2 link 1</a>
-                  <a href="#">Column 2 link 2</a>
-                  <a href="#">Column 3 link 3</a>
-                </li>
-                <li>
-                  <a href="#">Column 3 link 1</a>
-                  <a href="#">Column 3 link 2</a>
-                  <a href="#">Column 3 link 3</a>
-                </li>
-                <li>
-                  <a href="#">Column 4 link 1</a>
-                  <a href="#">Column 4 link 2</a>
-                  <a href="#">Column 4 link 3</a>
-                </li>
+                    <a href="#">Aquacultural Products</a>
+                    <a href="#">Product Name 1</a>
+                    <a href="#">Product Name 2</a>
+                  </li>
               </ul>
             </li>
-            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>
                 <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -96,13 +77,14 @@
                 <li><a href="#">Drop Down 3</a></li>
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+            </li> --}}
+            <li><a class="nav-link scrollto" href="{{ route('gallery') }}">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="{{ url('#contact') }}">Contact</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle d-none"></i>
         </nav><!-- .navbar -->
 
-        <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+        <a class="btn-getstarted scrollto" href="{{ url('#about') }}">Get Started</a>
 
       </div>
     </header><!-- End Header -->
@@ -110,8 +92,8 @@
     <section id="hero-animated" class="hero-animated d-flex align-items-center">
       <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
         <img src="{{ asset('assets/img/hero-carousel/hero-carousel-3.svg') }}" class="img-fluid animated">
-        <h2>Welcome to <span>HeroBiz</span></h2>
-        <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
+        <h2>Welcome to <span>Brosy Industries</span></h2>
+        <p>Modern, research-driven solutions for Agriculture and Aquaculture. Premium products, expertise in Bio-Fertilizers, Bio-Pesticides, and more. Embrace organic farming with us for excellence and 100% quality assurance.</p>
         <div class="d-flex">
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
           <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -186,84 +168,48 @@
 
               <!-- Tabs -->
               <ul class="nav nav-pills mb-3">
-                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a></li>
-                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a></li>
-                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a></li>
+                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Who We Are</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">What We Do</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Why Choose Us</a></li>
               </ul><!-- End Tabs -->
 
               <!-- Tab Content -->
               <div class="tab-content">
 
                 <div class="tab-pane fade show active" id="tab1">
-
-                  <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
-                    <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                  </div>
-                  <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                    <h5>We at Brosy Industries Private Limited create organic, high quality plants and aquaculture support products. Organic farming is fast becoming a global phenomenon with the awareness growing day by day. This awakening inspired us to embark upon ambitious plan to establish a Bio-Fertilizer unit in our own state of Assam to be able to provide the required bio inputs to the cultivators as well as the organic farming community, simultaneously reducing the use of chemical fertilizers.</h5>
 
+                  </div>
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
-                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                    <h5>Vitamins are highly essential for holistic growth and we create the perfect balance to give your plants and aqua life a complete evolution, higher productivity and improved quality keeping in mind that the caliber of ecosystem is maintained and improved with each usage.</h5>
                   </div>
-                  <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                  </div>
-                  <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
 
                 </div><!-- End Tab 1 Content -->
 
                 <div class="tab-pane fade show" id="tab2">
 
-                  <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
 
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
-                    <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                    <h5>We are modern, innovative, research driven organization working towards creating solution for both Agriculture and Aquaculture. Our premium products provide optimized plant nutrition value for their high efficiency, crop- suitability, low chloride content, and purity.
+                    </h5>
                   </div>
-                  <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
 
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
-                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                    <h5>We have a wide range of products catering plants, soil and aqua life. We are expertise in Bio-Fertilizers, Bio-Pesticides, Growth Promoters, Micronutrients, Soil Boosters, Herbicides and various aquaculture products like Sodium Percarbonate, Potassium Permanganate, Fish Micronutrients & Growth Promoters etc.</h5>
                   </div>
-                  <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                  </div>
-                  <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
                 </div><!-- End Tab 2 Content -->
 
                 <div class="tab-pane fade show" id="tab3">
 
-                  <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-
                   <div class="d-flex align-items-center mt-4">
                     <i class="bi bi-check2"></i>
-                    <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                    <h5>Quality is our motto. Our passion is to deliver the best reflects in each product we formulate. Our products undergo rigorous research and are made available only after 100% assurance and quality certification is done.</h5>
                   </div>
-                  <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
-
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                  </div>
-                  <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                  <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                  </div>
-                  <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
                 </div><!-- End Tab 3 Content -->
 
               </div>
