@@ -25,11 +25,20 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/variables.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    <script src="{{ asset('assets/js/main.js') }}"></script>
   <script src="{{ asset('assets/js/lottie.js') }}"></script>
 </head>
 
 <body>
-
+  <div id="preloader"></div>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
       <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -84,8 +93,6 @@
           </ul>
           <i class="bi bi-list mobile-nav-toggle d-none"></i>
         </nav><!-- .navbar -->
-
-        <a class="btn-getstarted scrollto" href="{{ url('#about') }}">Get Started</a>
 
       </div>
     </header><!-- End Header -->
@@ -1203,7 +1210,7 @@
                   <i class="bi bi-geo-alt flex-shrink-0"></i>
                   <div>
                     <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                    <p>H/No. 10, Dr. B. Borooah Road, Ulubari, Guwahati, Kamrup(M), Assam, 781007</p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -1211,7 +1218,7 @@
                   <i class="bi bi-envelope flex-shrink-0"></i>
                   <div>
                     <h4>Email:</h4>
-                    <p>info@example.com</p>
+                    <p>brosyindustries@aol.com</p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -1219,7 +1226,8 @@
                   <i class="bi bi-phone flex-shrink-0"></i>
                   <div>
                     <h4>Call:</h4>
-                    <p>+1 5589 55488 55</p>
+                    <p>+91-8638198860/8134957275
+                    </p>
                   </div>
                 </div><!-- End Info Item -->
 
@@ -1269,11 +1277,10 @@
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
                 <h3>HeroBiz</h3>
-                <p>
-                  A108 Adam Street <br>
-                  NY 535022, USA<br><br>
-                  <strong>Phone:</strong> +1 5589 55488 55<br>
-                  <strong>Email:</strong> info@example.com<br>
+                <p>H/No. 10, Dr. B. Borooah Road, Ulubari,<br>
+                  Guwahati, Kamrup(M), Assam, 781007<br><br>
+                  <strong>Phone:</strong> +91-8638198860/8134957275<br>
+                  <strong>Email:</strong> brosyindustries@aol.com<br>
                 </p>
               </div>
             </div>
@@ -1292,7 +1299,7 @@
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
                 <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
@@ -1344,17 +1351,9 @@
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <div id="preloader"></div>
 
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
 
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+
 
   </body>
 
