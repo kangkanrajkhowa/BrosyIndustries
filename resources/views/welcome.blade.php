@@ -25,6 +25,7 @@
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/variables.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+  <script src="{{ asset('assets/js/lottie.js') }}"></script>
 </head>
 
 <body>
@@ -35,8 +36,8 @@
 
         <a href="{{ route('home') }}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1>Brosy Industries<span>.</span></h1>
+           <img src="{{ asset('assets/img/logo.png') }}" alt="">
+          {{-- <h1>Brosy Industries  </h1> --}}
         </a>
 
         <nav id="navbar" class="navbar">
@@ -91,9 +92,10 @@
 
     <section id="hero-animated" class="hero-animated d-flex align-items-center">
       <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-        <img src="{{ asset('assets/img/hero-carousel/hero-carousel-3.svg') }}" class="img-fluid animated">
+        <lottie-player src="https://lottie.host/e66174da-eeb1-44ae-b392-d7faf626cfea/28xNTkl4QR.json" background="" speed="1" style="width: 600px; height: 400px" loop autoplay direction="1" mode="normal" class="img-fluid animated"></lottie-player>
+        {{-- <img src="{{ asset('assets/img/hero-carousel/hero-carousel-3.svg') }}" class="img-fluid animated"> --}}
         <h2>Welcome to <span>Brosy Industries</span></h2>
-        <p>Modern, research-driven solutions for Agriculture and Aquaculture. Premium products, expertise in Bio-Fertilizers, Bio-Pesticides, and more. Embrace organic farming with us for excellence and 100% quality assurance.</p>
+        <p>Embrace Excellence in Farming with Our Premium Bio-Products and Commitment to Quality Assurance.</p>
         <div class="d-flex">
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
           <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -152,7 +154,7 @@
 
           <div class="section-header">
             <h2>About Us</h2>
-            <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+            <p>Pioneering Sustainable Agriculture and Aquaculture: Delivering Premium Organic Solutions for Optimal Growth and Environmental Health Worldwide.</p>
           </div>
 
           <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
@@ -164,7 +166,7 @@
             </div>
 
             <div class="col-lg-7">
-              <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+              <h4 class="pt-0 pt-lg-5">Choose Brosy Industries for Quality Assurance, Expertise, and a Greener Future in Farming and Aquaculture.</h4>
 
               <!-- Tabs -->
               <ul class="nav nav-pills mb-3">
@@ -178,13 +180,13 @@
 
                 <div class="tab-pane fade show active" id="tab1">
                   <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h5>We at Brosy Industries Private Limited create organic, high quality plants and aquaculture support products. Organic farming is fast becoming a global phenomenon with the awareness growing day by day. This awakening inspired us to embark upon ambitious plan to establish a Bio-Fertilizer unit in our own state of Assam to be able to provide the required bio inputs to the cultivators as well as the organic farming community, simultaneously reducing the use of chemical fertilizers.</h5>
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>Brosy Industries Private Limited is committed to creating organic, high-quality plants, and aquaculture support products. The global phenomenon of organic farming has gained significant awareness, inspiring us to take a bold step in establishing a Bio-Fertilizer unit in our home state of Assam. Our vision is to provide essential bio inputs to cultivators and the organic farming community while simultaneously reducing the reliance on chemical fertilizers.</h6>
 
                   </div>
                   <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h5>Vitamins are highly essential for holistic growth and we create the perfect balance to give your plants and aqua life a complete evolution, higher productivity and improved quality keeping in mind that the caliber of ecosystem is maintained and improved with each usage.</h5>
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>Understanding the paramount importance of vitamins for holistic growth, we craft products that strike the perfect balance, granting your plants and aqua life a complete evolution, higher productivity, and improved quality. Our dedication lies in maintaining and enhancing the caliber of the ecosystem with each usage of our products.</h6>
                   </div>
 
                 </div><!-- End Tab 1 Content -->
@@ -193,22 +195,26 @@
 
 
                   <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h5>We are modern, innovative, research driven organization working towards creating solution for both Agriculture and Aquaculture. Our premium products provide optimized plant nutrition value for their high efficiency, crop- suitability, low chloride content, and purity.
-                    </h5>
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>At Brosy Industries, we are a modern, innovative, and research-driven organization dedicated to finding solutions for both Agriculture and Aquaculture. Our premium products offer optimized plant nutrition value, ensuring high efficiency, crop suitability, low chloride content, and purity.
+                    </h6>
                   </div>
 
                   <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h5>We have a wide range of products catering plants, soil and aqua life. We are expertise in Bio-Fertilizers, Bio-Pesticides, Growth Promoters, Micronutrients, Soil Boosters, Herbicides and various aquaculture products like Sodium Percarbonate, Potassium Permanganate, Fish Micronutrients & Growth Promoters etc.</h5>
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>With a wide range of products catering to plants, soil, and aqua life, our expertise lies in Bio-Fertilizers, Bio-Pesticides, Growth Promoters, Micronutrients, Soil Boosters, Herbicides, and various aquaculture products like Sodium Percarbonate, Potassium Permanganate, Fish Micronutrients & Growth Promoters, among others.</h6>
                   </div>
                 </div><!-- End Tab 2 Content -->
 
                 <div class="tab-pane fade show" id="tab3">
 
                   <div class="d-flex align-items-center mt-4">
-                    <i class="bi bi-check2"></i>
-                    <h5>Quality is our motto. Our passion is to deliver the best reflects in each product we formulate. Our products undergo rigorous research and are made available only after 100% assurance and quality certification is done.</h5>
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>At Brosy Industries, quality is the essence of our operation. We take immense pride in delivering nothing short of excellence in each product we formulate. Rigorous research and testing are undertaken to ensure that our products meet the highest standards before they reach our customers. Our commitment to 100% assurance and quality certification sets us apart, making us the preferred choice for all your agricultural and aquacultural needs.</h6>
+                  </div>
+                  <div class="d-flex align-items-center mt-4">
+                    <i class="bi bi-arrow-return-right"></i>
+                    <h6>Choose Brosy Industries Private Limited for premium products, unmatched expertise in organic farming solutions, and the assurance of delivering the best. Join us in cultivating a greener and sustainable future for agriculture and aquaculture.</h6>
                   </div>
                 </div><!-- End Tab 3 Content -->
 
@@ -1346,7 +1352,7 @@
     <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
