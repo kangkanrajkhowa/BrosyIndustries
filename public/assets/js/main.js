@@ -28,31 +28,50 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = document.querySelectorAll('#navbar .scrollto');
+/**
+ * Navbar links active state on scroll and click
+ */
+let navbarlinks = document.querySelectorAll('#navbar .scrollto');
 
-  function navbarlinksActive() {
-    navbarlinks.forEach(navbarlink => {
+function navbarlinksActive() {
+  navbarlinks.forEach(navbarlink => {
+    if (!navbarlink.hash) return;
 
-      if (!navbarlink.hash) return;
+    let section = document.querySelector(navbarlink.hash);
+    if (!section) return;
 
-      let section = document.querySelector(navbarlink.hash);
-      if (!section) return;
+    let position = window.scrollY;
+    if (navbarlink.hash !== '#header') position += 200;
 
-      let position = window.scrollY;
-      if (navbarlink.hash != '#header') position += 200;
+    if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      navbarlink.classList.add('active');
+    } else {
+      navbarlink.classList.remove('active');
+    }
+  });
+}
 
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active');
-      } else {
-        navbarlink.classList.remove('active');
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive);
-  document.addEventListener('scroll', navbarlinksActive);
+navbarlinks.forEach(navbarlink => {
+  navbarlink.addEventListener('click', function (e) {
+    e.preventDefault();
+    let target = document.querySelector(navbarlink.hash);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 50, // Adjust the offset as needed
+        behavior: 'smooth'
+      });
+
+      // Remove active class from all links and add to the clicked link
+      navbarlinks.forEach(link => {
+        link.classList.remove('active');
+      });
+      navbarlink.classList.add('active');
+    }
+  });
+});
+
+window.addEventListener('load', navbarlinksActive);
+document.addEventListener('scroll', navbarlinksActive);
 
   /**
    * Function to scroll to an element with top ofset

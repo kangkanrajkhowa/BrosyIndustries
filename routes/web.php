@@ -29,3 +29,7 @@ Route::get('/gallery', function () {
 Route::get('/products', function () {
     return view('products');
 })->name('products');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
