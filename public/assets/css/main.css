@@ -94,15 +94,18 @@ section {
 }
 
 .section-header h2 {
-  font-size: 48px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--color-secondary);
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section-header p {
   margin: 0 auto;
-  color: var(--color-secondary-light);
+  color: #667c72;
 }
 
 @media (min-width: 1280px) {
@@ -342,15 +345,24 @@ section {
   .navbar .dropdown a:hover:before,
   .navbar .dropdown:hover>a:before,
   .navbar .dropdown .active:before {
-    visibility: hidden;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -2px;
+    background-color: var(--color-primary);
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0.8);
+    transition: all 0.3s ease-in-out 0s;
+
   }
 
   .navbar .dropdown a:hover,
   .navbar .dropdown .active,
   .navbar .dropdown .active:focus,
   .navbar .dropdown:hover>a {
-    color: var(--color-white);
-    background: var(--color-secondary);
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul {
@@ -363,7 +375,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-secondary);
+    background: var(--color-default);
     transition: 0.3s;
   }
 
@@ -1179,11 +1191,11 @@ section {
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  padding: 0 0 60px 0;
+  padding: 10px 0 0 0;
 }
 
 .clients .swiper-slide img {
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.3s;
 }
 
@@ -3170,4 +3182,10 @@ section {
     display: inline-block;
     margin-right: 10px;
     color: green;
+}
+
+.img-custom {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
 }
