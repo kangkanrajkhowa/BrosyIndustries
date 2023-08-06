@@ -74,23 +74,7 @@
     </header><!-- End Header -->
 
 
-    <main id="main">
-
-        <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs">
-          <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-              <h2>Blog</h2>
-              <ol>
-                <li><a href="index.html">Home</a></li>
-                <li>Blog</li>
-              </ol>
-            </div>
-
-          </div>
-        </div><!-- End Breadcrumbs -->
-
+    <main id="main" style="margin-top: 100px;">
         <!-- ======= Blog Section ======= -->
         <section id="blog" class="blog">
           <div class="container" data-aos="fade-up">
