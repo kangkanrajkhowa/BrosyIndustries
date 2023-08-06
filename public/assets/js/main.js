@@ -30,10 +30,11 @@ if (selectHeader) {
 /**
  * Navbar links active state on scroll
  */
-let navbarlinks = document.querySelectorAll('#navbar a');
+let navbarlinks = document.querySelectorAll('#navbar .scrollto');
 
 function navbarlinksActive() {
   navbarlinks.forEach(navbarlink => {
+
     if (!navbarlink.hash) return;
 
     let section = document.querySelector(navbarlink.hash);
@@ -53,7 +54,7 @@ window.addEventListener('load', navbarlinksActive);
 document.addEventListener('scroll', navbarlinksActive);
 
 /**
- * Function to scroll to an element with top offset
+ * Function to scroll to an element with top ofset
  */
 function scrollto(el) {
   const selectHeader = document.querySelector('#header');
@@ -71,29 +72,34 @@ function scrollto(el) {
 }
 
 /**
- * Toggle mobile nav dropdowns
+ * Fires the scrollto function on click to links .scrollto
  */
-const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+let selectScrollto = document.querySelectorAll('.scrollto');
+selectScrollto.forEach(el => el.addEventListener('click', function(event) {
+  if (document.querySelector(this.hash)) {
+    event.preventDefault();
 
-navDropdowns.forEach(el => {
-  el.addEventListener('click', function(event) {
-    if (window.innerWidth <= 991) {
-      if (this.nextElementSibling.classList.contains('dropdown-active')) {
-        event.preventDefault();
-        this.nextElementSibling.classList.remove('dropdown-active');
-        return;
-      }
-    }
-    if (document.querySelector('.mobile-nav-active')) {
-      event.preventDefault();
-      this.classList.toggle('active');
-      this.nextElementSibling.classList.toggle('dropdown-active');
+    let mobileNavActive = document.querySelector('.mobile-nav-active');
+    if (mobileNavActive) {
+      mobileNavActive.classList.remove('mobile-nav-active');
 
-      let dropDownIndicator = this.querySelector('.dropdown-indicator');
-      dropDownIndicator.classList.toggle('bi-chevron-up');
-      dropDownIndicator.classList.toggle('bi-chevron-down');
+      let navbarToggle = document.querySelector('.mobile-nav-toggle');
+      navbarToggle.classList.toggle('bi-list');
+      navbarToggle.classList.toggle('bi-x');
     }
-  })
+    scrollto(this.hash);
+  }
+}));
+
+/**
+ * Scroll with ofset on page load with hash links in the url
+ */
+window.addEventListener('load', () => {
+  if (window.location.hash) {
+    if (document.querySelector(window.location.hash)) {
+      scrollto(window.location.hash);
+    }
+  }
 });
 
 /**
@@ -112,37 +118,23 @@ if (mobileNavToogle) {
 }
 
 /**
- * Fires the scrollto function on click to links .scrollto
+ * Toggle mobile nav dropdowns
  */
-let selectScrollto = document.querySelectorAll('.scrollto');
-selectScrollto.forEach(el => el.addEventListener('click', function(event) {
-  if (document.querySelector(this.hash)) {
-    event.preventDefault();
+const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
-    if (window.innerWidth <= 991) {
-      if (document.querySelector(this.hash).classList.contains('dropdown-menu')) {
-        return;
-      }
-      document.querySelector('body').classList.remove('mobile-nav-active');
-      mobileNavToogle.classList.remove('bi-x');
-      mobileNavToogle.classList.add('bi-list');
+navDropdowns.forEach(el => {
+  el.addEventListener('click', function(event) {
+    if (document.querySelector('.mobile-nav-active')) {
+      event.preventDefault();
+      this.classList.toggle('active');
+      this.nextElementSibling.classList.toggle('dropdown-active');
+
+      let dropDownIndicator = this.querySelector('.dropdown-indicator');
+      dropDownIndicator.classList.toggle('bi-chevron-up');
+      dropDownIndicator.classList.toggle('bi-chevron-down');
     }
-
-    scrollto(this.hash);
-  }
-}));
-
-/**
- * Scroll with offset on page load with hash links in the url
- */
-window.addEventListener('load', () => {
-  if (window.location.hash) {
-    if (document.querySelector(window.location.hash)) {
-      scrollto(window.location.hash);
-    }
-  }
+  })
 });
-
 
   /**
    * Auto generate the hero carousel indicators
@@ -304,3 +296,4 @@ window.addEventListener('load', () => {
   });
 
 });
+
