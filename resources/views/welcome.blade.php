@@ -45,27 +45,28 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="{{ url('#hero-fullscreen') }}" class="nav-link scrollto">Home</a></li>
-                    <li><a href="{{ url('#about') }}" class="nav-link scrollto">About</a></li>
-                    <li class="dropdown megamenu"><a href="{{ url('#features') }}" class="nav-link scrollto"><span>Products</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li>
-                                <a href="#">Agricultural Products</a>
-                                <a href="#">Product Name 1</a>
-                                <a href="#">Product Name 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Aquacultural Products</a>
-                                <a href="#">Product Name 1</a>
-                                <a href="#">Product Name 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ url('#services') }}" class="nav-link scrollto">Services</a></li>
-                    <li><a href="{{ route('certificate') }}" class="nav-link scrollto">Certificate</a></li>
+                    <li><a href="{{ url('#about') }}" class="nav-link scrollto">About Us</a></li>
+                    <li><a href="{{ url('#features') }}" class="nav-link scrollto">Services</a></li>
+                    <li><a href="{{ url('#services') }}" class="nav-link scrollto">Products</a></li>
                     <li><a href="{{ route('blog') }}" class="nav-link scrollto">Blog</a></li>
                     <li><a href="{{ route('gallery') }}" class="nav-link scrollto">Gallery</a></li>
-                    <li><a href="{{ url('#contact') }}" class="nav-link scrollto">Contact</a></li>
+                    <li><a href="{{ url('#contact') }}" class="nav-link scrollto">Contact Us</a></li>
+                    {{-- <li class="dropdown megamenu"><a href="{{ url('#features') }}"
+                    class="nav-link scrollto"><span>Products</span> <i
+                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">Agricultural Products</a>
+                            <a href="#">Product Name 1</a>
+                            <a href="#">Product Name 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Aquacultural Products</a>
+                            <a href="#">Product Name 1</a>
+                            <a href="#">Product Name 2</a>
+                        </li>
+                    </ul>
+                    </li> --}}
                 </ul>
                 <i class="mobile-nav-toggle bi bi-list d-none"></i>
             </nav><!-- .navbar -->
@@ -190,8 +191,625 @@
                 </div>
 
             </div>
-            <!-- ======= Featured Services Section ======= -->
-            <div id="featured-services" class="featured-services mt-5" data-aos="fade-up">
+        </section>
+        <!-- ======= Featured Services Section ======= -->
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Nurturing Growth in Agriculture and Aquaculture: Explore our Comprehensive Range of Soil,
+                        Fertilizers, and Pesticide Products</p>
+                </div>
+                <ul class="nav nav-tabs row gy-4 d-flex mt-2">
+
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                            <i class="bi bi-1-square color-cyan"></i>
+                            <h4>Integrated Pest Management</h4>
+                        </a>
+                    </li><!-- End Tab 1 Nav -->
+
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                            <i class="bi bi-2-square color-indigo"></i>
+                            <h4>Integrated Disease Management</h4>
+                        </a>
+                    </li><!-- End Tab 2 Nav -->
+
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                            <i class="bi bi-3-square color-teal"></i>
+                            <h4>Plant Nutrient Management</h4>
+                        </a>
+                    </li><!-- End Tab 3 Nav -->
+
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                            <i class="bi bi-4-square color-red"></i>
+                            <h4>Organic Farming</h4>
+                        </a>
+                    </li><!-- End Tab 4 Nav -->
+
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+                            <i class="bi bi-5-square color-blue"></i>
+                            <h4>Urban Farming</h4>
+                        </a>
+                    </li><!-- End Tab 5 Nav -->
+                    <li class="nav-item col-6 col-md-4 col-lg-2">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+                            <i class="bi bi-6-square color-orange"></i>
+                            <h4>Hydroponics</h4>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Integrated Pest Management</h3>
+                                <p>
+                                    Indiscriminate and injudicious use of chemical pesticides in agriculture has
+                                    resulted in several associated adverse effects such as environmental pollution,
+                                    ecological imbalances, pesticides residues in food, fruits and vegetables, fodder,
+                                    soil and water, pest resurgence, human and animal health hazards, destruction of
+                                    bio-control agents, development of resistance in pests etc. IPM is an eco-friendly
+                                    approach which encompasses cultural, mechanical, biological and need based chemical
+                                    control measures. The IPM approach is being disseminated through various
+                                    schemes/projects at national and state level.
+                                </p>
+                                <p>
+                                    As we approached 21st century there is increasing demand on organically produced
+                                    food, conservation of biodiversity, unpolluted environment and sustainable
+                                    agriculture. To face these challenges, bio-control agents and bio-pesticides have
+                                    emerged as viable alternatives in pest & diseases control. In spite of the thrust
+                                    from Govt. of India and Govt. of Assam the adoption of bio-control agents and
+                                    bio-pesticides as an agro-input by farmers is still in infancy.
+
+                                </p>
+                                <p class="services-p">
+                                    Tools of IPM
+                                </p>
+                                <ul class="fst-italic">
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Monitoring:</span> Keep tracks of the pests and
+                                        their potential damage. This provides knowledge about the current pests and crop
+                                        situation and is helpful in selecting the best possible combinations of the pest
+                                        management methods.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Pest resistant
+                                            varieties:</span> Breeding for
+                                        pest resistance is a continuous process. These are bred and selected when
+                                        available in order to protect against key pests.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural pest
+                                            control:</span> It includes crop
+                                        production practices that make crop environment less susceptible to pests. Crop
+                                        rotation, cover crop, row and plant spacing, planting and harvesting dates,
+                                        destruction of old crop debris are a few examples. Cultural controls are based
+                                        on pest biology and development.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Mechanical
+                                            control:</span> These are based on
+                                        the knowledge of pest behaviour. Hand picking, installation of bird perches,
+                                        mulching and installation of traps are a few examples.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Biological
+                                            control:</span> These include
+                                        augmentation and conservation of natural enemies of pests such as insect
+                                        predators, parasitoids, pathogen and weed feeders. In IPM programes, native
+                                        natural enemy populations are conserved and non-native agents are released with
+                                        utmost caution.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Chemical
+                                            control:</span> Pesticides are used to
+                                        keep the pest population below economically damaging levels when the pests
+                                        cannot be controlled by other means. It is applied only when the pest's damaging
+                                        capacity is nearing to the threshold.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {{-- <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <img src="{{ asset('assets/img/products/1.jpg') }}" alt="" class="img-fluid
+                            img-custom">
+                        </div> --}}
+                    </div>
+                </div><!-- End Tab Content 1 -->
+
+                <div class="tab-pane" id="tab-2">
+                    <div class="row gy-4">
+                        <div class="col-lg-12 order-2 order-lg-1">
+                            <h3>Integrated Disease Management</h3>
+                            <p>
+                                Integrated Disease Management (IDM) is a holistic approach to managing plant
+                                diseases that involves combining multiple strategies and practices to effectively
+                                control and minimize the impact of diseases on crops. IDM aims to provide
+                                sustainable solutions that are environmentally friendly, economically viable, and
+                                socially acceptable. It emphasizes the integration of various tools, techniques, and
+                                practices to create a comprehensive and effective disease management plan. This
+                                approach is widely used in agriculture and horticulture to protect crops from
+                                diseases while reducing the reliance on chemical interventions.
+                            </p>
+                            <p class="services-p">Key components of Integrated Disease Management</p>
+                            <ul class="fst-italic">
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
+                                        Practices:</span> These involve
+                                    manipulating the growing environment and crop practices to reduce disease
+                                    incidence. Examples include selecting disease-resistant crop varieties, using
+                                    appropriate planting and spacing techniques, optimizing irrigation and nutrient
+                                    management, and practicing crop rotation.</li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Biological
+                                        Control:</span> This involves the
+                                    use of natural enemies such as beneficial microorganisms, predators,
+                                    parasitoids, and pathogens to suppress disease-causing organisms. For instance,
+                                    introducing beneficial insects that feed on pest insects can help keep pest
+                                    populations in check.
+                                </li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Chemical
+                                        Management:</span> While IDM aims to
+                                    minimize chemical inputs, judicious use of pesticides can be a part of the
+                                    strategy. However, the emphasis is on using targeted and environmentally
+                                    friendly pesticides only when necessary, and rotating different classes of
+                                    chemicals to reduce the risk of resistance development.
+                                </li>
+                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural and
+                                        Biological Amendments:</span>
+                                    Utilizing techniques like crop residue management, composting, and adding
+                                    beneficial microorganisms to the soil can improve the overall health of the
+                                    growing environment and suppress disease development.</li>
+                            </ul>
+                        </div>
+
+                        {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
+                                <img src="{{ asset('assets/img/products/2.jpg') }}" alt=""
+                        class="img-fluid img-custom">
+                    </div> --}}
+                </div>
+            </div><!-- End Tab Content 2 -->
+
+            <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h3>Plant Nutrient Management</h3>
+                        <p>
+                            Plant Nutrient Management refers to the maintenance of soil fertility and plant
+                            nutrients supply to an optimum level for sustaining the desired productivity through
+                            optimization of the benefits from all possible sources of organic, inorganic and
+                            biological components in an integrated manner. Brosy Industries Private Limited encourages
+                            farmers to follow the principal of
+                            conservation agriculture in order to minimize soil disturbance, promoting
+                            intercropping and crop rotations and developing a permanent soil cover to minimize
+                            the need for chemical fertilizers.
+
+                        </p>
+                        <ul class="fst-italic">
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Yield-targeted, site-and soil specific
+                            </li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Understanding the interrelation of
+                                different nutrients
+                            </li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Nutrients on a cropping-system /
+                                rotation basis; and more specifically
+                            </li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Use on-farm and off-farm waste through
+                                recycling</li>
+                        </ul>
+                    </div>
+
+                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
+                                <img src="{{ asset('assets/img/products/3.jpg') }}" alt="" class="img-fluid
+                    img-custom">
+                </div> --}}
+            </div>
+            </div><!-- End Tab Content 3 -->
+
+            <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h3>Organic Farming</h3>
+                        <p>
+                            Organic Farming is a form of agriculture that relies on ecosystem management and
+                            attempts to reduce or eliminate chemical agricultural inputs. It is a holistic
+                            production management system that promotes and enhances agro-ecosystem health,
+                            including biodiversity, biological cycles, and soil biological activity. Organic
+                            farming excludes the use of synthetic inputs, such as synthetic fertilizers and
+                            pesticides, and genetically modified organisms (GMOs)
+
+                        </p>
+                        <p>
+                            The primary goal of organic farming is to create a healthy and balanced ecosystem
+                            that supports the long-term health of soil, plants, animals, and people, while
+                            minimizing the use of synthetic inputs such as pesticides and synthetic fertilizers.
+                            Organic farming relies on natural processes, biodiversity, and ecological principles
+                            to promote soil fertility, pest and disease management, and overall farm
+                            sustainability.
+
+                        </p>
+                    </div>
+
+                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
+                                <img src="{{ asset('assets/img/products/4.jpg') }}" alt="" class="img-fluid
+                    img-custom">
+                </div> --}}
+            </div>
+            </div><!-- End Tab Content 4 -->
+
+            <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h3>Urban Farming</h3>
+                        <p>
+                            Urban farming, also known as urban agriculture, refers to the practice of growing,
+                            cultivating, and producing food and other agricultural products within urban or
+                            suburban areas. This can take place in various forms, such as rooftop gardens,
+                            community gardens, indoor hydroponic systems, vertical farms, and more. Urban
+                            farming is gaining popularity as a response to challenges like population growth,
+                            food security concerns, limited access to fresh produce, and the desire for more
+                            sustainable and locally sourced food options.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p class="services-p">
+                                    Types of Urban Farming:
+
+                                </p>
+                                <ul class="fst-italic">
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Rooftop
+                                            Gardens:</span> Utilizing rooftops of
+                                        buildings to create green spaces for planting crops.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Community
+                                            Gardens:</span> Shared garden spaces
+                                        where community members collectively grow vegetables, herbs, and fruits.</li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Vertical
+                                            Farms:</span> Multi-level indoor farms
+                                        that use hydroponic, aeroponic, or aquaponic systems to grow crops in a
+                                        controlled environment.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Container
+                                            Gardening:</span> Growing plants in
+                                        containers on balconies, patios, or even windowsills.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Hydroponics
+                                            and
+                                            Aquaponics:</span> Soilless
+                                        systems that use nutrient-rich water to grow plants (hydroponics) or combine
+                                        fish farming with plant cultivation (aquaponics).
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Indoor
+                                            Farming:</span> Growing crops indoors
+                                        using artificial lighting and controlled environmental conditions.</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="services-p">
+                                    Benefits of Urban Farming:
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Food
+                                            Security:</span> Urban farming can
+                                        contribute to local food production, reducing the reliance on distant
+                                        agricultural sources.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Fresh
+                                            Produce:</span> Residents have access to
+                                        freshly harvested, nutritious produce.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Environmental
+                                            Sustainability:</span> Urban
+                                        farms can reduce the carbon footprint associated with transporting food long
+                                        distances.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Green
+                                            Space:</span> Urban farming can enhance
+                                        aesthetics, biodiversity, and air quality in urban areas.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Community
+                                            Building:</span> Community gardens
+                                        and urban farms foster social interaction, skill-sharing, and a sense of
+                                        ownership.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Educational
+                                            Opportunities:</span> Urban farming
+                                        offers learning experiences about agriculture, nutrition, and sustainability.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Economic
+                                            Opportunities:</span> Urban farmers
+                                        can generate income by selling produce to local markets or restaurants.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="services-p">
+                                    Challenges of Urban Farming:
+                                </p>
+                                <ul>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Limited
+                                            Space:</span> Urban areas often have
+                                        limited land available for farming, requiring creative solutions.
+
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Resource
+                                            Constraints:</span> Water and energy
+                                        resources can be limited, especially in densely populated cities.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Zoning and
+                                            Regulations:</span> Local
+                                        regulations may restrict agricultural activities in urban areas.
+
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Initial
+                                            Investment:</span> Setting up urban
+                                        farming systems can require financial investments in equipment and
+                                        infrastructure.
+
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Expertise:</span>
+                                        Successful urban farming
+                                        often requires specialized knowledge in areas like hydroponics, pest management,
+                                        and plant nutrition.
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
+                                <img src="{{ asset('assets/img/products/5.jpg') }}" alt="" class="img-fluid
+                    img-custom">
+                </div> --}}
+            </div>
+            </div><!-- End Tab Content 5 -->
+            <div class="tab-pane" id="tab-6">
+                <div class="row gy-4">
+                    <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Hydroponics</h3>
+                        <p>
+                            Due to the shortage of land it is not possible to cultivate the agriculture crops in
+                            cities, but there is huge requirement of the agriculture produce in urban locations.
+                            Hydroponics is best technology for the agriculture cultivation where soil is not
+                            available. It can be cultivated on the roof top in the hilly area, on the concrete
+                            floor.
+                            Hydroponics is a subset of hydro culture and is a method of growing plants using
+                            mineral nutrient solutions, in water, without soil. Terrestrial plants may be grown
+                            with their roots in the mineral nutrient solution only or in an inert medium, such
+                            as perlite, gravel, mineral wool, expanded clay or coconut husk.
+                        </p>
+                        <p>
+                            As we approached 21st century there is increasing demand on organically produced
+                            food, conservation of biodiversity, unpolluted environment and sustainable
+                            agriculture. To face these challenges, bio-control agents and bio-pesticides have
+                            emerged as viable alternatives in pest & diseases control. In spite of the thrust
+                            from Govt. of India and Govt. of Assam the adoption of bio-control agents and
+                            bio-pesticides as an agro-input by farmers is still in infancy.
+
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="services-p">
+                                    Some of the reasons why hydroponics is being adapted around the world for food
+                                    production are the following:
+                                </p>
+                                <ul class="fst-italic">
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Easy to Grow & Cultivate
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Stable and high yields
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> 80% less water than Traditional Farming
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Pesticides Free Farming
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> It is easier to harvest
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Chemicals free Farming
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> IOT enabled Farming (Smart Farming)
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> No personal presence needed
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="services-p">
+                                    Types of Hydroponic Systems:
+                                </p>
+                                <ul class="fst-italic">
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span"> Water Culture
+                                            (DWC):</span> Plants are
+                                        suspended in a nutrient solution with their roots submerged in the solution. Air
+                                        pumps provide oxygen to the roots.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Nutrient Film
+                                            Technique (NFT):</span> A thin
+                                        film of nutrient solution flows over the roots, providing nutrients and oxygen.
+                                        Excess solution is collected and recirculated.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Drip
+                                            System:</span>
+                                        Nutrient solution is
+                                        delivered to the plants through a network of tubes and drippers, either directly
+                                        onto the root system or onto a growing medium.
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Ebb and Flow
+                                            (Flood
+                                            and Drain):</span> The
+                                        growing medium periodically floods with nutrient solution, and then drains,
+                                        allowing for oxygen to reach the roots.
+
+                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Aeroponics:</span>
+                                        Plant roots are suspended in
+                                        air, and nutrient solution is delivered as a fine mist. This method maximizes
+                                        oxygen exposure to the roots.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <img src="{{ asset('assets/img/products/6.jpg') }}" alt="" class="img-fluid
+                    img-custom">
+                </div> --}}
+            </div>
+            </div>
+            </div>
+
+            </div>
+        </section><!-- End Features Section -->
+        <section id="services" class="services">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Our Products</h2>
+                    <p>Nurturing Growth in Agriculture and Aquaculture: Explore our Comprehensive Range of Soil,
+                        Fertilizers, and Pesticide Products</p>
+                </div>
+
+                <div class="row gy-5 mt-2">
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/1.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                {{-- <div class="icon">
+                                    <i class="bi bi-seedling"></i>
+                                </div> --}}
+                                <a href="#" class="stretched-link">
+                                    <h3>Plant Growth Promoters</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/2.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                {{-- <div class="icon">
+                                    <i class="bi bi-flask"></i>
+                                </div> --}}
+                                <a href="#" class="stretched-link">
+                                    <h3>Bio Fertilizers</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/3.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                {{-- <div class="icon">
+                                    <i class="bi bi-tools"></i>
+                                </div> --}}
+                                <a href="#" class="stretched-link">
+                                    <h3>Bio Pesticides</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/4.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                {{-- <div class="icon">
+                                    <i class="bi bi-bar-chart"></i>
+                                </div> --}}
+                                <a href="#" class="stretched-link">
+                                    <h3>Bio Fungicides</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/5.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                {{-- <div class="icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div> --}}
+                                <a href="#" class="stretched-link">
+                                    <h3>Micronutrients</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/6.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                <a href="#" class="stretched-link">
+                                    <h3>Soil Conditioner</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End Service Item -->
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/7.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                <a href="#" class="stretched-link">
+                                    <h3>Suspension Concentrates</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-6" data-aos="zoom-in" data-aos-delay="900">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="{{ asset('assets/img/products/8.jpg') }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="details position-relative">
+                                <a href="#" class="stretched-link">
+                                    <h3>Probiotics</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        {{-- <div id="featured-services" class="featured-services mt-5" data-aos="fade-up">
                 <div class="container">
                     <div class="row gy-4">
 
@@ -230,401 +848,35 @@
                     </div>
 
                 </div>
-            </div><!-- End Featured Services Section -->
-            <!-- ======= Clients Section ======= -->
-            <div id="clients" class="clients mt-5" data-aos="fade-up">
-                <div class="container" data-aos="zoom-out">
+            </div><!-- End Featured Services Section --> --}}
+        <!-- ======= Clients Section ======= -->
+        {{-- <div id="clients" class="clients mt-5" data-aos="fade-up">
+            <div class="container" data-aos="zoom-out">
 
-                    <div class="clients-slider swiper">
-                        <div class="swiper-wrapper align-items-center">
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-1.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-2.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-3.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-4.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-5.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-6.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-7.png') }}"
-                                    class="img-fluid" alt=""></div>
-                            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-8.png') }}"
-                                    class="img-fluid" alt=""></div>
-                        </div>
-                    </div>
+                <div class="clients-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-1.png') }}"
+        class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-5.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-7.png') }}" class="img-fluid" alt="">
+        </div>
+        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-8.png') }}" class="img-fluid" alt="">
+        </div>
+        </div>
+        </div>
 
-                </div>
-            </div><!-- End Clients Section -->
-        </section><!-- End About Section -->
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Our Products</h2>
-                    <p>Nurturing Growth in Agriculture and Aquaculture: Explore our Comprehensive Range of Soil,
-                        Fertilizers, and Pesticide Products</p>
-                </div>
-                <ul class="nav nav-tabs row gy-4 d-flex">
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                            <i class="bi bi-1-square color-cyan"></i>
-                            <h4>Bhoomi</h4>
-                        </a>
-                    </li><!-- End Tab 1 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                            <i class="bi bi-2-square color-indigo"></i>
-                            <h4>Energy(Agri)</h4>
-                        </a>
-                    </li><!-- End Tab 2 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                            <i class="bi bi-3-square color-teal"></i>
-                            <h4>Energy(Tea)</h4>
-                        </a>
-                    </li><!-- End Tab 3 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                            <i class="bi bi-4-square color-red"></i>
-                            <h4>Nutrimax</h4>
-                        </a>
-                    </li><!-- End Tab 4 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-                            <i class="bi bi-5-square color-blue"></i>
-                            <h4>Oxylife(Fisheries)</h4>
-                        </a>
-                    </li><!-- End Tab 5 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
-                            <i class="bi bi-6-square color-orange"></i>
-                            <h4>Oxylife(Aquarium)</h4>
-                        </a>
-                    </li><!-- End Tab 6 Nav -->
-
-                </ul>
-
-                <div class="tab-content">
-
-                    <div class="tab-pane active show" id="tab-1">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>EcoCrops Bhoomi: Elevating Soil Health</h3>
-                                <p class="fst-italic">
-                                    Soil health is the cornerstone of robust crop nutrition, influencing up to 60% of
-                                    agricultural yield. EcoCrops Bhoomi, our soil booster, revitalizes soil by enhancing
-                                    fertility, nutrient availability, and structure.
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhances soil fertility and structure
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Promotes microbial activity and pH
-                                        balance</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Prevents erosion and conserves water
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Stimulates root and shoot development
-                                    </li>
-                                </ul>
-                                <p>
-                                    Join us in cultivating sustainable agriculture with EcoCrops Bhoomi. Together, we
-                                    nurture soil health for a thriving future.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
-                                data-aos-delay="200">
-                                <img src="{{ asset('assets/img/products/1.jpg') }}" alt="" class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 1 -->
-
-                    <div class="tab-pane" id="tab-2">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>EcoCrops Energy: Redefining Agriculture</h3>
-                                <p class="fst-italic">
-                                    Discover the innovation of EcoCrops Energy in agriculture, unlocking transformative
-                                    benefits:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Increase crop yield and productivity
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhance nutrient absorption and
-                                        efficiency</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Boost stress tolerance and resilience
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Accelerate growth and maturation</li>
-                                </ul>
-                                <p>
-                                    Energize your agricultural practices with EcoCrops Energy, driving efficiency,
-                                    quality, and sustainability.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/2.jpeg') }}" alt=""
-                                    class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 2 -->
-
-                    <div class="tab-pane" id="tab-3">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>EcoCrops Energy: Empowering Tea Cultivation</h3>
-                                <p class="fst-italic">
-                                    Elevate your tea plantations with EcoCrops Energy, a Boron-based herbal extract of
-                                    specific seaweeds and beneficial herbs. Experience transformative benefits:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhance growth, yield, and crop quality
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Boost stress tolerance and resilience
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Regulate flowering, fruiting, and growth
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Improve drought tolerance and tea
-                                        quality</li>
-                                </ul>
-                                <p>
-                                    Discover the future of tea cultivation with EcoCrops Energy, unlocking success,
-                                    sustainability, and superior harvests.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/3.jpg') }}" alt="" class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 3 -->
-
-                    <div class="tab-pane" id="tab-4">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>EcoCrops Nutrimax: Empowering Crop Nutrition</h3>
-                                <p class="fst-italic">
-                                    Micronutrients are the foundation of successful agriculture, crucial for optimal
-                                    crop growth and development. Discover the power of Ecocrops Nutrimax:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Act as enzymatic catalysts for growth
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Strengthen plant immunity and defense
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhance nutrient uptake and synergy</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Boost yield potential and resilience
-                                    </li>
-                                </ul>
-                                <p>
-                                    Elevate your farming with EcoCrops Nutrimax, nurturing robust crops, balanced
-                                    nutrition, and a sustainable future.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/4.jpg') }}" alt="" class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 4 -->
-
-                    <div class="tab-pane" id="tab-5">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>EcoFeeds Oxylife: Elevating Fish Health and Production</h3>
-                                <p class="fst-italic">
-                                    Elevate your fisheries with Oxylife and experience these transformative benefits:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Optimal oxygen levels for fish health
-                                        and growth</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Prevent oxygen depletion and mitigate
-                                        fish kills</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhance water quality and natural
-                                        processes</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Alleviate stress during transport or
-                                        overcrowding</li>
-                                </ul>
-                                <p>
-                                    Discover the power of EcoFeeds Oxylife in promoting thriving fish, cleaner water,
-                                    and efficient oxygenation.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/5.png') }}" alt="" class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 5 -->
-
-                    <div class="tab-pane" id="tab-6">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                                <h3>EcoFeeds Oxylife: Enhancing Aquarium Environments</h3>
-                                <p class="fst-italic">
-                                    Elevate your aquarium experience with Oxylife and enjoy these key advantages:
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Optimal oxygen levels for fish health
-                                        and growth</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Increased fish growth and improved
-                                        production</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced water quality and waste
-                                        breakdown</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Alleviation of temporary oxygen
-                                        depletion</li>
-                                </ul>
-                                <p>
-                                    Discover the convenience of EcoFeeds Oxylife tablets, a cost-effective solution
-                                    supporting aquatic life and plant health.
-                                </p>
-                            </div>
-
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/6.png') }}" alt="" class="img-fluid img-custom">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 6 -->
-
-                </div>
-
-            </div>
-        </section><!-- End Features Section -->
-        <section id="services" class="services">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>Our Services</h2>
-                    <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad
-                        dolores adipisci aliquam.</p>
-                </div>
-
-                <div class="row gy-5">
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-seedling"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Optimized Plant Nutrition</h3>
-                                </a>
-                                <p>We provide modern, research-driven solutions for agriculture and aquaculture. Our
-                                    premium products offer optimized plant nutrition for high efficiency,
-                                    crop-suitability, low chloride content, and purity.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-flask"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Organic Farming Support</h3>
-                                </a>
-                                <p>We create high-quality organic plants and aquaculture products. Our focus on organic
-                                    farming aims to establish bio-fertilizer units, reducing chemical fertilizer use and
-                                    enhancing ecosystem health.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-tools"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Bio-Fertilizers & Bio-Pesticides</h3>
-                                </a>
-                                <p>Expertise in bio-fertilizers, bio-pesticides, and growth promoters. Our products
-                                    promote sustainable agriculture and aquaculture practices.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-bar-chart"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Enhanced Growth & Quality</h3>
-                                </a>
-                                <p>We help achieve higher productivity and improved quality in your plants and aqua
-                                    life. Our products maintain and improve ecosystem health.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-check-circle"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Assured Quality & Certification</h3>
-                                </a>
-                                <p>Quality is our priority. Our products undergo rigorous research and are certified for
-                                    assurance. We deliver the best for your agriculture and aquaculture needs.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-                        <div class="service-item">
-                            <div class="img">
-                                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="details position-relative">
-                                {{-- <div class="icon">
-                                    <i class="bi bi-heart-fill"></i>
-                                </div> --}}
-                                <a href="#" class="stretched-link">
-                                    <h3>Passionate Team</h3>
-                                </a>
-                                <p>Our dedicated team is passionate about delivering the best. We are committed to
-                                    providing innovative solutions for sustainable agriculture and aquaculture.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Service Item -->
-
-                </div>
-
-            </div>
-        </section>
-
-
-
+        </div>
+        </div><!-- End Clients Section -->
+        --}}
         <!-- ======= Call To Action Section ======= -->
         <section id="cta" class="cta">
             <div class="container" data-aos="zoom-out">
@@ -637,12 +889,12 @@
                         <p> Transform your farming and aquaculture ventures with us. Take advantage of our exceptional
                             products and expert knowledge to maximize your yields, minimize your efforts, and contribute
                             to a greener tomorrow.</p>
-                        <a class="cta-btn align-self-start" href="#">Call To Action</a>
+                        <a class="cta-btn align-self-start" href="#">Call Now</a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
                         <div class="img">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAAEDCAMAAABQ/CumAAAANlBMVEXMzMzPz8+RkZHJycnCwsK5ubnHx8exsbG9vb21tbWTk5OYmJiZmZmqqqrBwcG7u7ujo6OkpKTY3tpoAAADLklEQVR4nO3d226jMBCAYY8P4APG8P4vu2MD6UHJam+2pNL/VdUa4qgzeDCTm6wxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4ZUV8Hn0Z/m2/+bf7/52pZ5h6ApKXU45yeSi9iknXLx4vStrJN49ys77wxhyXnbDUHma2OFo1ErlPPxD7LasDS+qg4nV/7aL8rB/3z1bjF6mrYZTLVJpFwnJqezl/yKtOS9cWio9ST8XZzZrPxp2O/9Osu0UaNZtVR2US2ogN/LcNR5VetT2PBvGYa9dfIlvtV6NnetgzxiNS7EXgPx5h+ZfVyb0fsaYu92jc/5nsbpK/YrHXXayhZf8w83n8DDWR1oRk5Q9Yi8lO/vEb2ckxxeekX/0hIB8dtEGRbzpRMHinP2d2TQs0xW1u8kRGIrsq6jqrWV84ps6a0X3eGjpJrZblWSfN1YyH7etyTwl6WZa65GBnlYzR+zeKI/JpUymofe6bez9ZmL2cKGr8bq2bCXSlsWe9fDbe9TkGabpmPN+x5TzUv7n1S2HPrt6dW0atCGnk+HnRRMxVZtXY+CinfW0h1/OEe/6vbWRMsjw3z2IfGjfA2t3MaVdOj+L6plu0Ku+btmPUoL43/bTZVvYp1PNrCl0dbb4UeHYZOcaPxMGOVYh/pspyPtnI92uxdjzbdYIL4ksf+3xsMfXL1BkN7iLMu9E6Y9JKHI0CXyypu74faYJj5ajDcjQ3Gqk1b7hH1Ns/moyb6qWsR2qira0/SxdJNdTzoYp9/tnm6z97W5vXmuWztbLaXq9lePprtufYoW73uhrhpc36N9rFU2mwvLxrbn/Hkg8vnjzDX56HP89/sIw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Dfz375xW6Kc352sL0zT5Ez/0aNJD8/xm0nJN+ecd8FEH/WfIC1Mq3gJEv3s6jT7oNGHVVJcq6lP/7eKW9UQvE8pprAmU1MzmoIJPk2S2twP5uCbSHRimgQ9er8UVonJpDj54KIJ0acma1plFhPFu15Vzmt6Lmk2aYrGv18KT0n7EijfCP2W/gAqCRjRJP4mFQAAAABJRU5ErkJggg=="
+                            <img src="{{ asset('assets/img/cta.jpg') }}"
                                 alt="" class="img-fluid">
                         </div>
                     </div>
@@ -663,11 +915,11 @@
                     <div class="col-lg-6">
                         <div class="content d-flex flex-column justify-content-center h-100">
                             <h3>Explore the World of Agriculture and Aquaculture</h3>
-                            <p class="fst-italic">
+                            {{-- <p class="fst-italic">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore
                                 magna aliqua.
-                            </p>
+                            </p> --}}
                             <ul>
                                 <li><i class="bi bi-check-circle"></i> Discover how our innovative aquacultural
                                     solutions promote sustainable practices, enhance aquatic environments, and ensure
@@ -710,14 +962,12 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-content-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Non consectetur a erat nam at lectus urna duis?
+                                        What types of products do you offer for agriculture and aquaculture?
                                     </button>
                                 </h3>
                                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.
+                                        We offer a comprehensive range of products to support agriculture and aquaculture, including Plant Growth Promoters, Bio Fertilizers, Bio Pesticides, Bio Fungicides, Micronutrients, Soil Conditioners, Suspension Concentrates, and Probiotics. Our products are designed to nurture growth and enhance yields in these industries.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -727,15 +977,12 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-content-2">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                        Are your products safe for the environment and sustainable farming practices?
                                     </button>
                                 </h3>
                                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                        Yes, our products are formulated with a strong commitment to environmental sustainability and responsible farming practices. They are designed to minimize harm to the environment while promoting healthy crop growth and aquaculture systems. We prioritize eco-friendly solutions for sustainable agriculture and aquaculture.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -745,15 +992,12 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-content-3">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                                        How can I purchase your products?
                                     </button>
                                 </h3>
                                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                        You can purchase our products through our authorized distributors and retailers. Please call us on the number provided in contact us section for further assistance and inquiries.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -763,16 +1007,13 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-content-4">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                                        Do you provide any guidance or support for product application and usage?
                                     </button>
                                 </h3>
                                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                        Absolutely! We are committed to helping you get the most out of our products. Our website offers detailed product information and usage guidelines. Additionally, our customer support team is available to answer any specific questions you may have and provide guidance on proper product application for optimal results.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -782,15 +1023,12 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-content-5">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                        Are your products environmentally friendly?
                                     </button>
                                 </h3>
                                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
-                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
-                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
-                                        turpis cursus in
+                                        Yes, we are committed to environmentally sustainable agriculture. Our Bio Fertilizers, Bio Pesticides, and Bio Fungicides are formulated with eco-friendly ingredients that promote healthy crop growth while minimizing harm to the environment. We prioritize sustainable farming practices to protect both your crops and the planet.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -831,8 +1069,7 @@
 
                         <div class="info">
                             <h3>Get in touch</h3>
-                            <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia
-                                commodi minus.</p>
+                            <p>Have questions or need assistance with our products or services? We're here to help! Feel free to reach out to us anytime.</p>
 
                             <div class="info-item d-flex">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -864,7 +1101,8 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('send-email') }}" method="post" role="form" class="laravel-email-form" id="laravel-email-form">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
@@ -883,7 +1121,7 @@
                                 <textarea class="form-control" name="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="my-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading">Processing</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
@@ -905,7 +1143,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-info">
                             <strong>Office Location:</strong>
                             <p>H/No. 10, Dr. B. Borooah Road, Ulubari,<br>
@@ -913,37 +1151,41 @@
                                 <strong>Factory Location:</strong>
                                 <p>H/No. 8, Bokulban Path, Opp. Postal Training<br>
                                     Centre, Kerakuchi, Guwahati, Kamrup (M),<br>Assam, 781040<br><br>
-                                    <strong>Phone:</strong> +91- 8638198860 / 8134957275<br>
+                                    <strong>Phone:</strong> +91- 8638198860 / 8134957275<br><br>
                                     <strong>Email:</strong> brosyindustries@aol.com<br>
                                 </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                    {{-- <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Our Products</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Link 1</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Link 2</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Link 3</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Link 4</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Link 5</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Plant Growth Promoters</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Bio Fertilizers</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Bio Pesticides</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Bio Fungicides</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Micronutrients</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Soil Conditioner</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Suspension Concentrates</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Probiotics</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="col-lg-4 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service 1</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service 2</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service 3</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service 4</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Service 5</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Integrated Pest Management</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Integrated Disease Management</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Plant Nutrient Management</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Organic Farming</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Urban Farming</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a>Hydroponics</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <p>Join our newsletter to receive exclusive content and valuable tips delivered right to your inbox.</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -962,9 +1204,9 @@
                     <div class="copyright">
                         &copy; Copyright <strong><span>Brosy Industries</span></strong>. All Rights Reserved
                     </div>
-                    <div class="credits">
-                        Designed by <a href="https://kangkanrajkhowa.netlify.app/">Kangkan & Gitertha</a>
-                    </div>
+                    {{-- <div class="credits">
+                        Designed by <a href="https://kangkanrajkhowa.netlify.app/">Kangkan Rajkhowa</a>
+                    </div> --}}
                 </div>
 
                 <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
@@ -995,6 +1237,68 @@
 
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/lottie.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    var emailForm = document.getElementById('laravel-email-form');
+    var sentMessage = document.querySelector('.sent-message');
+    var errorMessage = document.querySelector('.error-message');
+    var loadingIndicator = document.querySelector('.loading');
+
+
+    emailForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        var formData = new FormData(emailForm);
+
+        loadingIndicator.style.display = 'block';
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', emailForm.getAttribute('action'), true);
+
+        // Set up the request headers (optional, depending on your needs)
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        xhr.setRequestHeader('Accept', 'application/json');
+
+        xhr.onload = function () {
+            loadingIndicator.style.display = 'none';
+            if (xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+
+                // Handle the success response here
+                sentMessage.textContent = response.message;
+                sentMessage.style.display = 'block';
+
+                // Clear the error message if it was previously displayed
+                errorMessage.style.display = 'none';
+            } else {
+                loadingIndicator.style.display = 'none';
+                var errorResponse = JSON.parse(xhr.responseText);
+
+                // Handle any errors
+                errorMessage.textContent = errorResponse.message;
+                errorMessage.style.display = 'block';
+
+                // Clear the success message if it was previously displayed
+                sentMessage.style.display = 'none';
+            }
+        };
+
+        xhr.onerror = function () {
+            // Handle network errors
+            errorMessage.textContent = 'An error occurred while sending the request.';
+            errorMessage.style.display = 'block';
+
+            // Clear the success message if it was previously displayed
+            sentMessage.style.display = 'none';
+        };
+
+        // Send the form data
+        xhr.send(formData);
+    });
+});
+
+    </script>
+
 
 </body>
 
