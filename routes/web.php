@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,8 +22,7 @@ Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/{id}', [BlogController::class, 'showBlog'])->name('blog.show');
 
 Route::post('/send-email', [ContactController::class, 'sendEmail'])->name('send-email');

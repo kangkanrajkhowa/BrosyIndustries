@@ -47,17 +47,10 @@
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 {{-- <h1>Brosy Industries  </h1> --}}
             </a>
-            <a href="{{ url('/') }}" class="nav-link scrollto"><button class="btn nav-btn"><i
+            <a href="{{ route('blog') }}" class=""><i
+                class="bi bi-arrow-left"></i> Back to Blog</a>
+            <a href="{{ url('/') }}" class=""><button class="btn nav-btn"><i
                         class="bi bi-arrow-left"></i> Back to Home</button></a>
-            {{-- <nav id="navbar" class="navbar">
-
-                <ul>
-                    <li></li>
-                    <li><a href="{{ route('gallery') }}" class="nav-link scrollto">Gallery</a></li>
-            </ul>
-            <i class="mobile-nav-toggle bi bi-list d-none"></i>
-            </nav><!-- .navbar --> --}}
-
         </div>
     </header><!-- End Header -->
 
@@ -65,84 +58,84 @@
     <main id="main" style="margin-top: 100px;">
         <!-- ======= Blog Section ======= -->
         <section id="blog" class="blog">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
 
-                <div class="section-header">
-                    <h2>Explore Our Blog</h2>
-                    <p style="text-align: justify; margin-top: -20px">Discover insightful articles and updates in the world of agriculture and aquaculture. Stay informed about the latest practices, technologies, and trends that are shaping the future of farming and aquatic prosperity.</p>
-                </div>
+              <div class="row g-5">
 
-              </div>
-            <div class="container mt-5" data-aos="fade-up">
+                <div class="col-lg-12">
 
-                <div class="row g-5">
+                  <article class="blog-details">
 
-                    <div class="col-lg-12">
-
-                        <div class="row gy-4 posts-list">
-                            @foreach ($paginatedArticles as $article)
-                            <div class="col-lg-6">
-                                <article class="d-flex flex-column">
-
-                                    <div class="post-img">
-                                        <img src="{{ $article['image'] }}"
-                                            alt="" class="img-fluid">
-                                    </div>
-
-                                    <h2 class="title">
-                                        <a href="{{ route('blog.show', ['id' => $article['id']]) }}">{{ $article['title'] }}</a>
-                                    </h2>
-
-                                    <div class="meta-top">
-                                        <ul>
-                                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                                    href="{{ route('blog.show', ['id' => $article['id']]) }}">{{ $article['author'] }}</a></li>
-                                            <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
-                                                    href="{{ route('blog.show', ['id' => $article['id']]) }}"><time datetime="2022-09-01">{{ $article['date'] }}</time></a></li>
-                                            <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                                    href="{{ route('blog.show', ['id' => $article['id']]) }}">{{ $article['comments'] }} Comments</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="content">
-                                        <p style="text-align: justify">
-                                            {{ $article['content'] }}
-                                        </p>
-                                    </div>
-
-                                    <div class="read-more mt-auto align-self-end">
-                                        <a href="{{ route('blog.show', ['id' => $article['id']]) }}">Read More</a>
-                                    </div>
-
-                                </article>
-                            </div><!-- End post list item -->
-                            @endforeach
-                        </div><!-- End blog posts list -->
-
-                        <div class="blog-pagination">
-                            <ul class="justify-content-center">
-                                @if ($paginatedArticles->currentPage() > 1)
-                                <li><a href="{{ $paginatedArticles->previousPageUrl() }}">Previous</a></li>
-                                @endif
-
-                                @for ($i = 1; $i <= $paginatedArticles->lastPage(); $i++)
-                                    <li class="{{ ($i == $paginatedArticles->currentPage()) ? 'active' : '' }}">
-                                        <a href="{{ $paginatedArticles->url($i) }}">{{ $i }}</a>
-                                    </li>
-                                @endfor
-
-                                @if ($paginatedArticles->currentPage() < $paginatedArticles->lastPage())
-                                    <li><a href="{{ $paginatedArticles->nextPageUrl() }}">Next</a></li>
-                                @endif
-                            </ul>
-                        </div><!-- End blog pagination -->
-
+                    <div class="post-img">
+                      <img src="{{ $article['image'] }}" alt="" class="img-fluid">
                     </div>
 
+                    <h2 class="title">{{ $article['title'] }}</h2>
+
+                    <div class="meta-top">
+                      <ul>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">{{ $article['author'] }}</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">{{ $article['date'] }}</time></a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">{{ $article['comments'] }} Comments</a></li>
+                      </ul>
+                    </div><!-- End meta top -->
+
+                    <div class="content">
+                      <p>
+                        {{ $article['content'] }}
+                      </p>
+
+                      <p>
+                        {{ $article['content_1'] }}
+                      </p>
+
+                      <blockquote>
+                        <p>
+                            {{ $article['highlighted_line1'] }}
+                        </p>
+                      </blockquote>
+
+                      <p>
+                        {{ $article['content_2'] }}
+                      </p>
+
+                      <h3>{{ $article['subtitle_1'] }}</h3>
+                      <p>
+                        {{ $article['para_1'] }}
+                      </p>
+                      <img src="{{ $article['image_2'] }}" class="img-fluid" alt="">
+
+                      <h3>{{ $article['subtitle_2'] }}</h3>
+                      <p>
+                        {{ $article['para_2'] }}
+                      </p>
+                      <p>
+                        {{ $article['para_3'] }}
+                      </p>
+
+                    </div><!-- End post content -->
+
+                    {{-- <div class="meta-bottom">
+                      <i class="bi bi-folder"></i>
+                      <ul class="cats">
+                        <li><a href="#">Business</a></li>
+                      </ul>
+
+                      <i class="bi bi-tags"></i>
+                      <ul class="tags">
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Marketing</a></li>
+                      </ul>
+                    </div><!-- End meta bottom --> --}}
+
+                  </article><!-- End blog post -->
+
                 </div>
+              </div>
 
             </div>
-        </section><!-- End Blog Section -->
+          </section>
 
     </main><!-- End #main -->
 

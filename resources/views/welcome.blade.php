@@ -27,7 +27,7 @@
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/variables-green.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </head>
 
 <body>
@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="col-lg-7">
-                        <h4 class="pt-0 pt-lg-5">Choose Brosy Industries for Quality Assurance, Expertise, and a Greener
+                        <h4 class="pt-0 pt-lg-5" style="text-align: justify">Choose Brosy Industries for Quality Assurance, Expertise, and a Greener
                             Future in Farming and Aquaculture.</h4>
 
                         <!-- Tabs -->
@@ -123,7 +123,7 @@
                             <div class="tab-pane fade show active" id="tab1">
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>Brosy Industries Private Limited is committed to creating organic, high-quality
+                                    <h6 style="text-align: justify">Brosy Industries Private Limited is committed to creating organic, high-quality
                                         plants, and aquaculture support products. The global phenomenon of organic
                                         farming has gained significant awareness, inspiring us to take a bold step in
                                         establishing a Bio-Fertilizer unit in our home state of Assam. Our vision is to
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>Understanding the paramount importance of vitamins for holistic growth, we craft
+                                    <h6 style="text-align: justify">Understanding the paramount importance of vitamins for holistic growth, we craft
                                         products that strike the perfect balance, granting your plants and aqua life a
                                         complete evolution, higher productivity, and improved quality. Our dedication
                                         lies in maintaining and enhancing the caliber of the ecosystem with each usage
@@ -147,7 +147,7 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>At Brosy Industries, we are a modern, innovative, and research-driven
+                                    <h6 style="text-align: justify">At Brosy Industries, we are a modern, innovative, and research-driven
                                         organization dedicated to finding solutions for both Agriculture and
                                         Aquaculture. Our premium products offer optimized plant nutrition value,
                                         ensuring high efficiency, crop suitability, low chloride content, and purity.
@@ -156,7 +156,7 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>With a wide range of products catering to plants, soil, and aqua life, our
+                                    <h6 style="text-align: justify">With a wide range of products catering to plants, soil, and aqua life, our
                                         expertise lies in Bio-Fertilizers, Bio-Pesticides, Growth Promoters,
                                         Micronutrients, Soil Boosters, Herbicides, and various aquaculture products like
                                         Sodium Percarbonate, Potassium Permanganate, Fish Micronutrients & Growth
@@ -168,7 +168,7 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>At Brosy Industries, quality is the essence of our operation. We take immense
+                                    <h6 style="text-align: justify">At Brosy Industries, quality is the essence of our operation. We take immense
                                         pride in delivering nothing short of excellence in each product we formulate.
                                         Rigorous research and testing are undertaken to ensure that our products meet
                                         the highest standards before they reach our customers. Our commitment to 100%
@@ -177,7 +177,7 @@
                                 </div>
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6>Choose Brosy Industries Private Limited for premium products, unmatched
+                                    <h6 style="text-align: justify">Choose Brosy Industries Private Limited for premium products, unmatched
                                         expertise in organic farming solutions, and the assurance of delivering the
                                         best. Join us in cultivating a greener and sustainable future for agriculture
                                         and aquaculture.</h6>
@@ -251,7 +251,7 @@
                         <div class="row gy-4">
                             <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                                 <h3>Integrated Pest Management</h3>
-                                <p>
+                                <p style="text-align: justify">
                                     Indiscriminate and injudicious use of chemical pesticides in agriculture has
                                     resulted in several associated adverse effects such as environmental pollution,
                                     ecological imbalances, pesticides residues in food, fruits and vegetables, fodder,
@@ -261,7 +261,7 @@
                                     control measures. The IPM approach is being disseminated through various
                                     schemes/projects at national and state level.
                                 </p>
-                                <p>
+                                <p style="text-align: justify">
                                     As we approached 21st century there is increasing demand on organically produced
                                     food, conservation of biodiversity, unpolluted environment and sustainable
                                     agriculture. To face these challenges, bio-control agents and bio-pesticides have
@@ -273,7 +273,7 @@
                                 <p class="services-p">
                                     Tools of IPM
                                 </p>
-                                <ul class="fst-italic">
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> <span
                                             class="custom-span">Monitoring:</span> Keep tracks of the pests and
                                         their potential damage. This provides knowledge about the current pests and crop
@@ -325,7 +325,7 @@
                     <div class="row gy-4">
                         <div class="col-lg-12 order-2 order-lg-1">
                             <h3>Integrated Disease Management</h3>
-                            <p>
+                            <p style="text-align: justify">
                                 Integrated Disease Management (IDM) is a holistic approach to managing plant
                                 diseases that involves combining multiple strategies and practices to effectively
                                 control and minimize the impact of diseases on crops. IDM aims to provide
@@ -336,7 +336,7 @@
                                 diseases while reducing the reliance on chemical interventions.
                             </p>
                             <p class="services-p">Key components of Integrated Disease Management</p>
-                            <ul class="fst-italic">
+                            <ul class="fst-italic" style="text-align: justify">
                                 <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
                                         Practices:</span> These involve
                                     manipulating the growing environment and crop practices to reduce disease
@@ -376,7 +376,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-12 order-2 order-lg-1">
                         <h3>Plant Nutrient Management</h3>
-                        <p>
+                        <p style="text-align: justify">
                             Plant Nutrient Management refers to the maintenance of soil fertility and plant
                             nutrients supply to an optimum level for sustaining the desired productivity through
                             optimization of the benefits from all possible sources of organic, inorganic and
@@ -387,7 +387,7 @@
                             the need for chemical fertilizers.
 
                         </p>
-                        <ul class="fst-italic">
+                        <ul class="fst-italic" style="text-align: justify">
                             <li><i class="bi bi-arrow-right-circle-fill"></i> Yield-targeted, site-and soil specific
                             </li>
                             <li><i class="bi bi-arrow-right-circle-fill"></i> Understanding the interrelation of
@@ -412,7 +412,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-12 order-2 order-lg-1">
                         <h3>Organic Farming</h3>
-                        <p>
+                        <p style="text-align: justify">
                             Organic Farming is a form of agriculture that relies on ecosystem management and
                             attempts to reduce or eliminate chemical agricultural inputs. It is a holistic
                             production management system that promotes and enhances agro-ecosystem health,
@@ -421,7 +421,7 @@
                             pesticides, and genetically modified organisms (GMOs)
 
                         </p>
-                        <p>
+                        <p style="text-align: justify">
                             The primary goal of organic farming is to create a healthy and balanced ecosystem
                             that supports the long-term health of soil, plants, animals, and people, while
                             minimizing the use of synthetic inputs such as pesticides and synthetic fertilizers.
@@ -443,7 +443,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-12 order-2 order-lg-1">
                         <h3>Urban Farming</h3>
-                        <p>
+                        <p style="text-align: justify">
                             Urban farming, also known as urban agriculture, refers to the practice of growing,
                             cultivating, and producing food and other agricultural products within urban or
                             suburban areas. This can take place in various forms, such as rooftop gardens,
@@ -458,7 +458,7 @@
                                     Types of Urban Farming:
 
                                 </p>
-                                <ul class="fst-italic">
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Rooftop
                                             Gardens:</span> Utilizing rooftops of
                                         buildings to create green spaces for planting crops.
@@ -490,7 +490,7 @@
                                 <p class="services-p">
                                     Benefits of Urban Farming:
                                 </p>
-                                <ul>
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Food
                                             Security:</span> Urban farming can
                                         contribute to local food production, reducing the reliance on distant
@@ -532,7 +532,7 @@
                                 <p class="services-p">
                                     Challenges of Urban Farming:
                                 </p>
-                                <ul>
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Limited
                                             Space:</span> Urban areas often have
                                         limited land available for farming, requiring creative solutions.
@@ -580,7 +580,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                         <h3>Hydroponics</h3>
-                        <p>
+                        <p style="text-align: justify">
                             Due to the shortage of land it is not possible to cultivate the agriculture crops in
                             cities, but there is huge requirement of the agriculture produce in urban locations.
                             Hydroponics is best technology for the agriculture cultivation where soil is not
@@ -591,7 +591,7 @@
                             with their roots in the mineral nutrient solution only or in an inert medium, such
                             as perlite, gravel, mineral wool, expanded clay or coconut husk.
                         </p>
-                        <p>
+                        <p style="text-align: justify">
                             As we approached 21st century there is increasing demand on organically produced
                             food, conservation of biodiversity, unpolluted environment and sustainable
                             agriculture. To face these challenges, bio-control agents and bio-pesticides have
@@ -602,11 +602,11 @@
                         </p>
                         <div class="row">
                             <div class="col-lg-6">
-                                <p class="services-p">
+                                <p class="services-p" style="text-align: justify">
                                     Some of the reasons why hydroponics is being adapted around the world for food
                                     production are the following:
                                 </p>
-                                <ul class="fst-italic">
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> Easy to Grow & Cultivate
                                     </li>
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> Stable and high yields
@@ -630,7 +630,7 @@
                                 <p class="services-p">
                                     Types of Hydroponic Systems:
                                 </p>
-                                <ul class="fst-italic">
+                                <ul class="fst-italic" style="text-align: justify">
                                     <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span"> Water Culture
                                             (DWC):</span> Plants are
                                         suspended in a nutrient solution with their roots submerged in the solution. Air
@@ -886,7 +886,7 @@
                     <div
                         class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
                         <h3>Join the <em>Brosy</em> Community Today!</h3>
-                        <p> Transform your farming and aquaculture ventures with us. Take advantage of our exceptional
+                        <p style="text-align: justify"> Transform your farming and aquaculture ventures with us. Take advantage of our exceptional
                             products and expert knowledge to maximize your yields, minimize your efforts, and contribute
                             to a greener tomorrow.</p>
                         <a class="cta-btn align-self-start" href="#">Call Now</a>
@@ -920,7 +920,7 @@
                                 incididunt ut labore et dolore
                                 magna aliqua.
                             </p> --}}
-                            <ul>
+                            <ul style="text-align: justify">
                                 <li><i class="bi bi-check-circle"></i> Discover how our innovative aquacultural
                                     solutions promote sustainable practices, enhance aquatic environments, and ensure
                                     healthy yields.</li>
@@ -949,13 +949,13 @@
 
                         <div class="content px-xl-5">
                             <h3>Frequently Asked <strong>Questions</strong></h3>
-                            <p>
+                            <p style="text-align: justify">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                             </p>
                         </div>
 
-                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
+                        <div class="accordion accordion-flush px-xl-5" id="faqlist" style="text-align: justify">
 
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="accordion-header">
@@ -1067,9 +1067,9 @@
 
                     <div class="col-lg-4">
 
-                        <div class="info">
+                        <div class="C">
                             <h3>Get in touch</h3>
-                            <p>Have questions or need assistance with our products or services? We're here to help! Feel free to reach out to us anytime.</p>
+                            <p style="text-align: justify">Have questions or need assistance with our products or services? We're here to help! Feel free to reach out to us anytime.</p>
 
                             <div class="info-item d-flex">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -1185,7 +1185,7 @@
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p>Join our newsletter to receive exclusive content and valuable tips delivered right to your inbox.</p>
+                        <p style="text-align: justify">Join our newsletter to receive exclusive content and valuable tips delivered right to your inbox.</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -1235,7 +1235,7 @@
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+
     <script src="{{ asset('assets/js/lottie.js') }}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
