@@ -47,10 +47,12 @@
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 {{-- <h1>Brosy Industries  </h1> --}}
             </a>
-            <a href="{{ route('blog') }}" class=""><i
-                class="bi bi-arrow-left"></i> Back to Blog</a>
-            <a href="{{ url('/') }}" class=""><button class="btn nav-btn"><i
-                        class="bi bi-arrow-left"></i> Back to Home</button></a>
+           <div class="ml-auto">
+            <a href="{{ route('blog') }}" class=""><button class="btn nav-btn"><i
+                class="bi bi-arrow-left"></i> Back to Blog</button></a>
+            <a href="{{ url('/') }}" class=""><button class="btn nav-btn-back"><i
+                class="bi bi-arrow-left"></i> Back to Home</button></a>
+           </div>
         </div>
     </header><!-- End Header -->
 

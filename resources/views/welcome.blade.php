@@ -38,13 +38,13 @@
 
             <a href="{{ route('home') }}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="{{ asset('assets/img/logo.png') }}" alt="">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="" style="width: 100px">
                 {{-- <h1>Brosy Industries  </h1> --}}
             </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="{{ url('#hero-fullscreen') }}" class="nav-link scrollto">Home</a></li>
+                    <li><a href="{{ url('#hero') }}" class="nav-link scrollto">Home</a></li>
                     <li><a href="{{ url('#about') }}" class="nav-link scrollto">About Us</a></li>
                     <li><a href="{{ url('#features') }}" class="nav-link scrollto">Services</a></li>
                     <li><a href="{{ url('#services') }}" class="nav-link scrollto">Products</a></li>
@@ -73,17 +73,80 @@
 
         </div>
     </header><!-- End Header -->
-    <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
-        <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
-            <h2>Welcome to <span>Brosy Industries</span></h2>
-            <p>Embrace Excellence in Farming with Our Premium Bio-Products and Commitment to Quality Assurance.</p>
-            <div class="d-flex">
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                    class="glightbox btn-watch-video d-flex align-items-center"><i
-                        class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>
+    <section id="hero" class="hero carousel carousel-slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid">
+                    <div class="row justify-content-center gy-6">
+
+                        <div class="col-12">
+                            <img src="assets/img/about.jpg" alt="" class="img img-carousel">
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <h2>Welcome to HeroBiz</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#about" class="btn-get-started scrollto ">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!-- End Carousel Item -->
+
+            <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row justify-content-center gy-6">
+
+                        <div class="col-12">
+                            <img src="assets/img/about.jpg" alt="" class="img img-carousel">
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <h2>At vero eos et accusamus</h2>
+                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                            <a href="#about" class="btn-get-started scrollto ">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!-- End Carousel Item -->
+
+            <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row justify-content-center gy-6">
+
+                        <div class="col-12">
+                            <img src="assets/img/about.jpg" alt="" class="img img-carousel">
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <h2>Temporibus autem quibusdam</h2>
+                            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+                            <a href="#about" class="btn-get-started scrollto ">Get Started</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!-- End Carousel Item -->
         </div>
+
+        <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
     </section>
 
     <main id="main">
@@ -107,7 +170,8 @@
                     </div>
 
                     <div class="col-lg-7">
-                        <h4 class="pt-0 pt-lg-5" style="text-align: justify">Choose Brosy Industries for Quality Assurance, Expertise, and a Greener
+                        <h4 class="pt-0 pt-lg-5" style="text-align: justify">Choose Brosy Industries for Quality
+                            Assurance, Expertise, and a Greener
                             Future in Farming and Aquaculture.</h4>
 
                         <!-- Tabs -->
@@ -123,7 +187,8 @@
                             <div class="tab-pane fade show active" id="tab1">
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">Brosy Industries Private Limited is committed to creating organic, high-quality
+                                    <h6 style="text-align: justify">Brosy Industries Private Limited is committed to
+                                        creating organic, high-quality
                                         plants, and aquaculture support products. The global phenomenon of organic
                                         farming has gained significant awareness, inspiring us to take a bold step in
                                         establishing a Bio-Fertilizer unit in our home state of Assam. Our vision is to
@@ -133,7 +198,8 @@
                                 </div>
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">Understanding the paramount importance of vitamins for holistic growth, we craft
+                                    <h6 style="text-align: justify">Understanding the paramount importance of vitamins
+                                        for holistic growth, we craft
                                         products that strike the perfect balance, granting your plants and aqua life a
                                         complete evolution, higher productivity, and improved quality. Our dedication
                                         lies in maintaining and enhancing the caliber of the ecosystem with each usage
@@ -147,7 +213,8 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">At Brosy Industries, we are a modern, innovative, and research-driven
+                                    <h6 style="text-align: justify">At Brosy Industries, we are a modern, innovative,
+                                        and research-driven
                                         organization dedicated to finding solutions for both Agriculture and
                                         Aquaculture. Our premium products offer optimized plant nutrition value,
                                         ensuring high efficiency, crop suitability, low chloride content, and purity.
@@ -156,7 +223,8 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">With a wide range of products catering to plants, soil, and aqua life, our
+                                    <h6 style="text-align: justify">With a wide range of products catering to plants,
+                                        soil, and aqua life, our
                                         expertise lies in Bio-Fertilizers, Bio-Pesticides, Growth Promoters,
                                         Micronutrients, Soil Boosters, Herbicides, and various aquaculture products like
                                         Sodium Percarbonate, Potassium Permanganate, Fish Micronutrients & Growth
@@ -168,7 +236,8 @@
 
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">At Brosy Industries, quality is the essence of our operation. We take immense
+                                    <h6 style="text-align: justify">At Brosy Industries, quality is the essence of our
+                                        operation. We take immense
                                         pride in delivering nothing short of excellence in each product we formulate.
                                         Rigorous research and testing are undertaken to ensure that our products meet
                                         the highest standards before they reach our customers. Our commitment to 100%
@@ -177,7 +246,8 @@
                                 </div>
                                 <div class="d-flex align-items-center mt-4">
                                     {{-- <i class="bi bi-arrow-return-right"></i> --}}
-                                    <h6 style="text-align: justify">Choose Brosy Industries Private Limited for premium products, unmatched
+                                    <h6 style="text-align: justify">Choose Brosy Industries Private Limited for premium
+                                        products, unmatched
                                         expertise in organic farming solutions, and the assurance of delivering the
                                         best. Join us in cultivating a greener and sustainable future for agriculture
                                         and aquaculture.</h6>
@@ -192,8 +262,6 @@
 
             </div>
         </section>
-        <!-- ======= Featured Services Section ======= -->
-        <!-- ======= Features Section ======= -->
         <section id="features" class="features">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
@@ -201,53 +269,12 @@
                     <p>Nurturing Growth in Agriculture and Aquaculture: Explore our Comprehensive Range of Soil,
                         Fertilizers, and Pesticide Products</p>
                 </div>
-                <ul class="nav nav-tabs row gy-4 d-flex mt-2">
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                            <i class="bi bi-1-square color-cyan"></i>
-                            <h4>Integrated Pest Management</h4>
-                        </a>
-                    </li><!-- End Tab 1 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                            <i class="bi bi-2-square color-indigo"></i>
-                            <h4>Integrated Disease Management</h4>
-                        </a>
-                    </li><!-- End Tab 2 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                            <i class="bi bi-3-square color-teal"></i>
-                            <h4>Plant Nutrient Management</h4>
-                        </a>
-                    </li><!-- End Tab 3 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                            <i class="bi bi-4-square color-red"></i>
-                            <h4>Organic Farming</h4>
-                        </a>
-                    </li><!-- End Tab 4 Nav -->
-
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
-                            <i class="bi bi-5-square color-blue"></i>
-                            <h4>Urban Farming</h4>
-                        </a>
-                    </li><!-- End Tab 5 Nav -->
-                    <li class="nav-item col-6 col-md-4 col-lg-2">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
-                            <i class="bi bi-6-square color-orange"></i>
-                            <h4>Hydroponics</h4>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-
-                    <div class="tab-pane active show" id="tab-1">
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse" id="handle1" checked="checked">
+                    <h2 class="handle">
+                        <label for="handle1">Integrated Pest Management</label>
+                    </h2>
+                    <div class="content tab-pane">
                         <div class="row gy-4">
                             <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
                                 <h3>Integrated Pest Management</h3>
@@ -280,24 +307,28 @@
                                         situation and is helpful in selecting the best possible combinations of the pest
                                         management methods.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Pest resistant
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Pest
+                                            resistant
                                             varieties:</span> Breeding for
                                         pest resistance is a continuous process. These are bred and selected when
                                         available in order to protect against key pests.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural pest
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
+                                            pest
                                             control:</span> It includes crop
                                         production practices that make crop environment less susceptible to pests. Crop
                                         rotation, cover crop, row and plant spacing, planting and harvesting dates,
                                         destruction of old crop debris are a few examples. Cultural controls are based
                                         on pest biology and development.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Mechanical
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Mechanical
                                             control:</span> These are based on
                                         the knowledge of pest behaviour. Hand picking, installation of bird perches,
                                         mulching and installation of traps are a few examples.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Biological
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Biological
                                             control:</span> These include
                                         augmentation and conservation of natural enemies of pests such as insect
                                         predators, parasitoids, pathogen and weed feeders. In IPM programes, native
@@ -312,372 +343,415 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            {{-- <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
-                                data-aos-delay="200">
-                                <img src="{{ asset('assets/img/products/1.jpg') }}" alt="" class="img-fluid
-                            img-custom">
-                        </div> --}}
-                    </div>
-                </div><!-- End Tab Content 1 -->
-
-                <div class="tab-pane" id="tab-2">
-                    <div class="row gy-4">
-                        <div class="col-lg-12 order-2 order-lg-1">
-                            <h3>Integrated Disease Management</h3>
-                            <p style="text-align: justify">
-                                Integrated Disease Management (IDM) is a holistic approach to managing plant
-                                diseases that involves combining multiple strategies and practices to effectively
-                                control and minimize the impact of diseases on crops. IDM aims to provide
-                                sustainable solutions that are environmentally friendly, economically viable, and
-                                socially acceptable. It emphasizes the integration of various tools, techniques, and
-                                practices to create a comprehensive and effective disease management plan. This
-                                approach is widely used in agriculture and horticulture to protect crops from
-                                diseases while reducing the reliance on chemical interventions.
-                            </p>
-                            <p class="services-p">Key components of Integrated Disease Management</p>
-                            <ul class="fst-italic" style="text-align: justify">
-                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
-                                        Practices:</span> These involve
-                                    manipulating the growing environment and crop practices to reduce disease
-                                    incidence. Examples include selecting disease-resistant crop varieties, using
-                                    appropriate planting and spacing techniques, optimizing irrigation and nutrient
-                                    management, and practicing crop rotation.</li>
-                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Biological
-                                        Control:</span> This involves the
-                                    use of natural enemies such as beneficial microorganisms, predators,
-                                    parasitoids, and pathogens to suppress disease-causing organisms. For instance,
-                                    introducing beneficial insects that feed on pest insects can help keep pest
-                                    populations in check.
-                                </li>
-                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Chemical
-                                        Management:</span> While IDM aims to
-                                    minimize chemical inputs, judicious use of pesticides can be a part of the
-                                    strategy. However, the emphasis is on using targeted and environmentally
-                                    friendly pesticides only when necessary, and rotating different classes of
-                                    chemicals to reduce the risk of resistance development.
-                                </li>
-                                <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural and
-                                        Biological Amendments:</span>
-                                    Utilizing techniques like crop residue management, composting, and adding
-                                    beneficial microorganisms to the soil can improve the overall health of the
-                                    growing environment and suppress disease development.</li>
-                            </ul>
                         </div>
-
-                        {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/2.jpg') }}" alt=""
-                        class="img-fluid img-custom">
-                    </div> --}}
-                </div>
-            </div><!-- End Tab Content 2 -->
-
-            <div class="tab-pane" id="tab-3">
-                <div class="row gy-4">
-                    <div class="col-lg-12 order-2 order-lg-1">
-                        <h3>Plant Nutrient Management</h3>
-                        <p style="text-align: justify">
-                            Plant Nutrient Management refers to the maintenance of soil fertility and plant
-                            nutrients supply to an optimum level for sustaining the desired productivity through
-                            optimization of the benefits from all possible sources of organic, inorganic and
-                            biological components in an integrated manner. Brosy Industries Private Limited encourages
-                            farmers to follow the principal of
-                            conservation agriculture in order to minimize soil disturbance, promoting
-                            intercropping and crop rotations and developing a permanent soil cover to minimize
-                            the need for chemical fertilizers.
-
-                        </p>
-                        <ul class="fst-italic" style="text-align: justify">
-                            <li><i class="bi bi-arrow-right-circle-fill"></i> Yield-targeted, site-and soil specific
-                            </li>
-                            <li><i class="bi bi-arrow-right-circle-fill"></i> Understanding the interrelation of
-                                different nutrients
-                            </li>
-                            <li><i class="bi bi-arrow-right-circle-fill"></i> Nutrients on a cropping-system /
-                                rotation basis; and more specifically
-                            </li>
-                            <li><i class="bi bi-arrow-right-circle-fill"></i> Use on-farm and off-farm waste through
-                                recycling</li>
-                        </ul>
                     </div>
-
-                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/3.jpg') }}" alt="" class="img-fluid
-                    img-custom">
-                </div> --}}
-            </div>
-            </div><!-- End Tab Content 3 -->
-
-            <div class="tab-pane" id="tab-4">
-                <div class="row gy-4">
-                    <div class="col-lg-12 order-2 order-lg-1">
-                        <h3>Organic Farming</h3>
-                        <p style="text-align: justify">
-                            Organic Farming is a form of agriculture that relies on ecosystem management and
-                            attempts to reduce or eliminate chemical agricultural inputs. It is a holistic
-                            production management system that promotes and enhances agro-ecosystem health,
-                            including biodiversity, biological cycles, and soil biological activity. Organic
-                            farming excludes the use of synthetic inputs, such as synthetic fertilizers and
-                            pesticides, and genetically modified organisms (GMOs)
-
-                        </p>
-                        <p style="text-align: justify">
-                            The primary goal of organic farming is to create a healthy and balanced ecosystem
-                            that supports the long-term health of soil, plants, animals, and people, while
-                            minimizing the use of synthetic inputs such as pesticides and synthetic fertilizers.
-                            Organic farming relies on natural processes, biodiversity, and ecological principles
-                            to promote soil fertility, pest and disease management, and overall farm
-                            sustainability.
-
-                        </p>
-                    </div>
-
-                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/4.jpg') }}" alt="" class="img-fluid
-                    img-custom">
-                </div> --}}
-            </div>
-            </div><!-- End Tab Content 4 -->
-
-            <div class="tab-pane" id="tab-5">
-                <div class="row gy-4">
-                    <div class="col-lg-12 order-2 order-lg-1">
-                        <h3>Urban Farming</h3>
-                        <p style="text-align: justify">
-                            Urban farming, also known as urban agriculture, refers to the practice of growing,
-                            cultivating, and producing food and other agricultural products within urban or
-                            suburban areas. This can take place in various forms, such as rooftop gardens,
-                            community gardens, indoor hydroponic systems, vertical farms, and more. Urban
-                            farming is gaining popularity as a response to challenges like population growth,
-                            food security concerns, limited access to fresh produce, and the desire for more
-                            sustainable and locally sourced food options.
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p class="services-p">
-                                    Types of Urban Farming:
-
+                </section>
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse2" id="handle2">
+                    <h2 class="handle">
+                        <label for="handle2">Integrated Disease Management</label>
+                    </h2>
+                    <div class="content tab-pane">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1">
+                                <h3>Integrated Disease Management</h3>
+                                <p style="text-align: justify">
+                                    Integrated Disease Management (IDM) is a holistic approach to managing plant
+                                    diseases that involves combining multiple strategies and practices to effectively
+                                    control and minimize the impact of diseases on crops. IDM aims to provide
+                                    sustainable solutions that are environmentally friendly, economically viable, and
+                                    socially acceptable. It emphasizes the integration of various tools, techniques, and
+                                    practices to create a comprehensive and effective disease management plan. This
+                                    approach is widely used in agriculture and horticulture to protect crops from
+                                    diseases while reducing the reliance on chemical interventions.
                                 </p>
+                                <p class="services-p">Key components of Integrated Disease Management</p>
                                 <ul class="fst-italic" style="text-align: justify">
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Rooftop
-                                            Gardens:</span> Utilizing rooftops of
-                                        buildings to create green spaces for planting crops.
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
+                                            Practices:</span> These involve
+                                        manipulating the growing environment and crop practices to reduce disease
+                                        incidence. Examples include selecting disease-resistant crop varieties, using
+                                        appropriate planting and spacing techniques, optimizing irrigation and nutrient
+                                        management, and practicing crop rotation.</li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                            class="custom-span">Biological
+                                            Control:</span> This involves the
+                                        use of natural enemies such as beneficial microorganisms, predators,
+                                        parasitoids, and pathogens to suppress disease-causing organisms. For instance,
+                                        introducing beneficial insects that feed on pest insects can help keep pest
+                                        populations in check.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Community
-                                            Gardens:</span> Shared garden spaces
-                                        where community members collectively grow vegetables, herbs, and fruits.</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Vertical
-                                            Farms:</span> Multi-level indoor farms
-                                        that use hydroponic, aeroponic, or aquaponic systems to grow crops in a
-                                        controlled environment.
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Chemical
+                                            Management:</span> While IDM aims to
+                                        minimize chemical inputs, judicious use of pesticides can be a part of the
+                                        strategy. However, the emphasis is on using targeted and environmentally
+                                        friendly pesticides only when necessary, and rotating different classes of
+                                        chemicals to reduce the risk of resistance development.
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Container
-                                            Gardening:</span> Growing plants in
-                                        containers on balconies, patios, or even windowsills.
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Hydroponics
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Cultural
                                             and
-                                            Aquaponics:</span> Soilless
-                                        systems that use nutrient-rich water to grow plants (hydroponics) or combine
-                                        fish farming with plant cultivation (aquaponics).
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Indoor
-                                            Farming:</span> Growing crops indoors
-                                        using artificial lighting and controlled environmental conditions.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <p class="services-p">
-                                    Benefits of Urban Farming:
-                                </p>
-                                <ul class="fst-italic" style="text-align: justify">
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Food
-                                            Security:</span> Urban farming can
-                                        contribute to local food production, reducing the reliance on distant
-                                        agricultural sources.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Fresh
-                                            Produce:</span> Residents have access to
-                                        freshly harvested, nutritious produce.
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Environmental
-                                            Sustainability:</span> Urban
-                                        farms can reduce the carbon footprint associated with transporting food long
-                                        distances.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Green
-                                            Space:</span> Urban farming can enhance
-                                        aesthetics, biodiversity, and air quality in urban areas.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Community
-                                            Building:</span> Community gardens
-                                        and urban farms foster social interaction, skill-sharing, and a sense of
-                                        ownership.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Educational
-                                            Opportunities:</span> Urban farming
-                                        offers learning experiences about agriculture, nutrition, and sustainability.
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Economic
-                                            Opportunities:</span> Urban farmers
-                                        can generate income by selling produce to local markets or restaurants.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <p class="services-p">
-                                    Challenges of Urban Farming:
-                                </p>
-                                <ul class="fst-italic" style="text-align: justify">
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Limited
-                                            Space:</span> Urban areas often have
-                                        limited land available for farming, requiring creative solutions.
-
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Resource
-                                            Constraints:</span> Water and energy
-                                        resources can be limited, especially in densely populated cities.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Zoning and
-                                            Regulations:</span> Local
-                                        regulations may restrict agricultural activities in urban areas.
-
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Initial
-                                            Investment:</span> Setting up urban
-                                        farming systems can require financial investments in equipment and
-                                        infrastructure.
-
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
-                                            class="custom-span">Expertise:</span>
-                                        Successful urban farming
-                                        often requires specialized knowledge in areas like hydroponics, pest management,
-                                        and plant nutrition.
-
-
-                                    </li>
+                                            Biological Amendments:</span>
+                                        Utilizing techniques like crop residue management, composting, and adding
+                                        beneficial microorganisms to the soil can improve the overall health of the
+                                        growing environment and suppress disease development.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse3" id="handle3">
+                    <h2 class="handle">
+                        <label for="handle3">Plant Nutrient Management</label>
+                    </h2>
+                    <div class="content tab-pane">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1">
+                                <h3>Plant Nutrient Management</h3>
+                                <p style="text-align: justify">
+                                    Plant Nutrient Management refers to the maintenance of soil fertility and plant
+                                    nutrients supply to an optimum level for sustaining the desired productivity through
+                                    optimization of the benefits from all possible sources of organic, inorganic and
+                                    biological components in an integrated manner. Brosy Industries Private Limited
+                                    encourages
+                                    farmers to follow the principal of
+                                    conservation agriculture in order to minimize soil disturbance, promoting
+                                    intercropping and crop rotations and developing a permanent soil cover to minimize
+                                    the need for chemical fertilizers.
 
-                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="{{ asset('assets/img/products/5.jpg') }}" alt="" class="img-fluid
-                    img-custom">
-                </div> --}}
-            </div>
-            </div><!-- End Tab Content 5 -->
-            <div class="tab-pane" id="tab-6">
-                <div class="row gy-4">
-                    <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Hydroponics</h3>
-                        <p style="text-align: justify">
-                            Due to the shortage of land it is not possible to cultivate the agriculture crops in
-                            cities, but there is huge requirement of the agriculture produce in urban locations.
-                            Hydroponics is best technology for the agriculture cultivation where soil is not
-                            available. It can be cultivated on the roof top in the hilly area, on the concrete
-                            floor.
-                            Hydroponics is a subset of hydro culture and is a method of growing plants using
-                            mineral nutrient solutions, in water, without soil. Terrestrial plants may be grown
-                            with their roots in the mineral nutrient solution only or in an inert medium, such
-                            as perlite, gravel, mineral wool, expanded clay or coconut husk.
-                        </p>
-                        <p style="text-align: justify">
-                            As we approached 21st century there is increasing demand on organically produced
-                            food, conservation of biodiversity, unpolluted environment and sustainable
-                            agriculture. To face these challenges, bio-control agents and bio-pesticides have
-                            emerged as viable alternatives in pest & diseases control. In spite of the thrust
-                            from Govt. of India and Govt. of Assam the adoption of bio-control agents and
-                            bio-pesticides as an agro-input by farmers is still in infancy.
-
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p class="services-p" style="text-align: justify">
-                                    Some of the reasons why hydroponics is being adapted around the world for food
-                                    production are the following:
                                 </p>
                                 <ul class="fst-italic" style="text-align: justify">
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Easy to Grow & Cultivate
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Yield-targeted, site-and soil
+                                        specific
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Stable and high yields
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Understanding the interrelation of
+                                        different nutrients
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> 80% less water than Traditional Farming
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Nutrients on a cropping-system /
+                                        rotation basis; and more specifically
                                     </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Pesticides Free Farming
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> It is easier to harvest
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Chemicals free Farming
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> IOT enabled Farming (Smart Farming)
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> No personal presence needed
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <p class="services-p">
-                                    Types of Hydroponic Systems:
-                                </p>
-                                <ul class="fst-italic" style="text-align: justify">
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span"> Water Culture
-                                            (DWC):</span> Plants are
-                                        suspended in a nutrient solution with their roots submerged in the solution. Air
-                                        pumps provide oxygen to the roots.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Nutrient Film
-                                            Technique (NFT):</span> A thin
-                                        film of nutrient solution flows over the roots, providing nutrients and oxygen.
-                                        Excess solution is collected and recirculated.
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Drip
-                                            System:</span>
-                                        Nutrient solution is
-                                        delivered to the plants through a network of tubes and drippers, either directly
-                                        onto the root system or onto a growing medium.
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">Ebb and Flow
-                                            (Flood
-                                            and Drain):</span> The
-                                        growing medium periodically floods with nutrient solution, and then drains,
-                                        allowing for oxygen to reach the roots.
-
-                                    </li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i> <span
-                                            class="custom-span">Aeroponics:</span>
-                                        Plant roots are suspended in
-                                        air, and nutrient solution is delivered as a fine mist. This method maximizes
-                                        oxygen exposure to the roots.
-                                    </li>
+                                    <li><i class="bi bi-arrow-right-circle-fill"></i> Use on-farm and off-farm waste
+                                        through
+                                        recycling</li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
+                </section>
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse4" id="handle4">
+                    <h2 class="handle">
+                        <label for="handle4">Organic Farming</label>
+                    </h2>
+                    <div class="content tab-pane">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1">
+                                <h3>Organic Farming</h3>
+                                <p style="text-align: justify">
+                                    Organic Farming is a form of agriculture that relies on ecosystem management and
+                                    attempts to reduce or eliminate chemical agricultural inputs. It is a holistic
+                                    production management system that promotes and enhances agro-ecosystem health,
+                                    including biodiversity, biological cycles, and soil biological activity. Organic
+                                    farming excludes the use of synthetic inputs, such as synthetic fertilizers and
+                                    pesticides, and genetically modified organisms (GMOs)
 
-                    {{-- <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
-                                data-aos-delay="200">
-                                <img src="{{ asset('assets/img/products/6.jpg') }}" alt="" class="img-fluid
-                    img-custom">
-                </div> --}}
-            </div>
-            </div>
-            </div>
+                                </p>
+                                <p style="text-align: justify">
+                                    The primary goal of organic farming is to create a healthy and balanced ecosystem
+                                    that supports the long-term health of soil, plants, animals, and people, while
+                                    minimizing the use of synthetic inputs such as pesticides and synthetic fertilizers.
+                                    Organic farming relies on natural processes, biodiversity, and ecological principles
+                                    to promote soil fertility, pest and disease management, and overall farm
+                                    sustainability.
 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse5" id="handle5">
+                    <h2 class="handle">
+                        <label for="handle5">Urban Farming</label>
+                    </h2>
+                    <div class="content tab-pane">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1">
+                                <h3>Urban Farming</h3>
+                                <p style="text-align: justify">
+                                    Urban farming, also known as urban agriculture, refers to the practice of growing,
+                                    cultivating, and producing food and other agricultural products within urban or
+                                    suburban areas. This can take place in various forms, such as rooftop gardens,
+                                    community gardens, indoor hydroponic systems, vertical farms, and more. Urban
+                                    farming is gaining popularity as a response to challenges like population growth,
+                                    food security concerns, limited access to fresh produce, and the desire for more
+                                    sustainable and locally sourced food options.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="services-p">
+                                            Types of Urban Farming:
+
+                                        </p>
+                                        <ul class="fst-italic" style="text-align: justify">
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Rooftop
+                                                    Gardens:</span> Utilizing rooftops of
+                                                buildings to create green spaces for planting crops.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Community
+                                                    Gardens:</span> Shared garden spaces
+                                                where community members collectively grow vegetables, herbs, and fruits.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Vertical
+                                                    Farms:</span> Multi-level indoor farms
+                                                that use hydroponic, aeroponic, or aquaponic systems to grow crops in a
+                                                controlled environment.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Container
+                                                    Gardening:</span> Growing plants in
+                                                containers on balconies, patios, or even windowsills.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Hydroponics
+                                                    and
+                                                    Aquaponics:</span> Soilless
+                                                systems that use nutrient-rich water to grow plants (hydroponics) or
+                                                combine
+                                                fish farming with plant cultivation (aquaponics).
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Indoor
+                                                    Farming:</span> Growing crops indoors
+                                                using artificial lighting and controlled environmental conditions.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="services-p">
+                                            Benefits of Urban Farming:
+                                        </p>
+                                        <ul class="fst-italic" style="text-align: justify">
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Food
+                                                    Security:</span> Urban farming can
+                                                contribute to local food production, reducing the reliance on distant
+                                                agricultural sources.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Fresh
+                                                    Produce:</span> Residents have access to
+                                                freshly harvested, nutritious produce.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Environmental
+                                                    Sustainability:</span> Urban
+                                                farms can reduce the carbon footprint associated with transporting food
+                                                long
+                                                distances.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Green
+                                                    Space:</span> Urban farming can enhance
+                                                aesthetics, biodiversity, and air quality in urban areas.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Community
+                                                    Building:</span> Community gardens
+                                                and urban farms foster social interaction, skill-sharing, and a sense of
+                                                ownership.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Educational
+                                                    Opportunities:</span> Urban farming
+                                                offers learning experiences about agriculture, nutrition, and
+                                                sustainability.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Economic
+                                                    Opportunities:</span> Urban farmers
+                                                can generate income by selling produce to local markets or restaurants.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="services-p">
+                                            Challenges of Urban Farming:
+                                        </p>
+                                        <ul class="fst-italic" style="text-align: justify">
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Limited
+                                                    Space:</span> Urban areas often have
+                                                limited land available for farming, requiring creative solutions.
+
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Resource
+                                                    Constraints:</span> Water and energy
+                                                resources can be limited, especially in densely populated cities.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Zoning
+                                                    and
+                                                    Regulations:</span> Local
+                                                regulations may restrict agricultural activities in urban areas.
+
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Initial
+                                                    Investment:</span> Setting up urban
+                                                farming systems can require financial investments in equipment and
+                                                infrastructure.
+
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Expertise:</span>
+                                                Successful urban farming
+                                                often requires specialized knowledge in areas like hydroponics, pest
+                                                management,
+                                                and plant nutrition.
+
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="accordion p-1">
+                    <input type="checkbox" name="collapse6" id="handle6">
+                    <h2 class="handle">
+                        <label for="handle6">Hydroponics</label>
+                    </h2>
+                    <div class="content">
+                        <div class="row gy-4">
+                            <div class="col-lg-12 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                                <h3>Hydroponics</h3>
+                                <p style="text-align: justify">
+                                    Due to the shortage of land it is not possible to cultivate the agriculture crops in
+                                    cities, but there is huge requirement of the agriculture produce in urban locations.
+                                    Hydroponics is best technology for the agriculture cultivation where soil is not
+                                    available. It can be cultivated on the roof top in the hilly area, on the concrete
+                                    floor.
+                                    Hydroponics is a subset of hydro culture and is a method of growing plants using
+                                    mineral nutrient solutions, in water, without soil. Terrestrial plants may be grown
+                                    with their roots in the mineral nutrient solution only or in an inert medium, such
+                                    as perlite, gravel, mineral wool, expanded clay or coconut husk.
+                                </p>
+                                <p style="text-align: justify">
+                                    As we approached 21st century there is increasing demand on organically produced
+                                    food, conservation of biodiversity, unpolluted environment and sustainable
+                                    agriculture. To face these challenges, bio-control agents and bio-pesticides have
+                                    emerged as viable alternatives in pest & diseases control. In spite of the thrust
+                                    from Govt. of India and Govt. of Assam the adoption of bio-control agents and
+                                    bio-pesticides as an agro-input by farmers is still in infancy.
+
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="services-p" style="text-align: justify">
+                                            Some of the reasons why hydroponics is being adapted around the world for
+                                            food
+                                            production are the following:
+                                        </p>
+                                        <ul class="fst-italic" style="text-align: justify">
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> Easy to Grow & Cultivate
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> Stable and high yields
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> 80% less water than
+                                                Traditional
+                                                Farming
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> Pesticides Free Farming
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> It is easier to harvest
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> Chemicals free Farming
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> IOT enabled Farming (Smart
+                                                Farming)
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> No personal presence
+                                                needed
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="services-p">
+                                            Types of Hydroponic Systems:
+                                        </p>
+                                        <ul class="fst-italic" style="text-align: justify">
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span class="custom-span">
+                                                    Water
+                                                    Culture
+                                                    (DWC):</span> Plants are
+                                                suspended in a nutrient solution with their roots submerged in the
+                                                solution. Air
+                                                pumps provide oxygen to the roots.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Nutrient
+                                                    Film
+                                                    Technique (NFT):</span> A thin
+                                                film of nutrient solution flows over the roots, providing nutrients and
+                                                oxygen.
+                                                Excess solution is collected and recirculated.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Drip
+                                                    System:</span>
+                                                Nutrient solution is
+                                                delivered to the plants through a network of tubes and drippers, either
+                                                directly
+                                                onto the root system or onto a growing medium.
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Ebb and
+                                                    Flow
+                                                    (Flood
+                                                    and Drain):</span> The
+                                                growing medium periodically floods with nutrient solution, and then
+                                                drains,
+                                                allowing for oxygen to reach the roots.
+
+                                            </li>
+                                            <li><i class="bi bi-arrow-right-circle-fill"></i> <span
+                                                    class="custom-span">Aeroponics:</span>
+                                                Plant roots are suspended in
+                                                air, and nutrient solution is delivered as a fine mist. This method
+                                                maximizes
+                                                oxygen exposure to the roots.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section><!-- End Features Section -->
+        </section>
+
+        {{-- <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up"
+                                        data-aos-delay="200">
+                                        <img src="{{ asset('assets/img/products/6.jpg') }}" alt="" class="img-fluid
+        img-custom">
+        </div> --}}
         <section id="services" class="services">
             <div class="container" data-aos="fade-up">
 
@@ -809,75 +883,7 @@
             </div>
         </section>
 
-        {{-- <div id="featured-services" class="featured-services mt-5" data-aos="fade-up">
-                <div class="container">
-                    <div class="row gy-4">
 
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-activity icon"></i></div>
-                                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                            </div>
-                        </div><!-- End Service Item -->
-
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                                <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                            </div>
-                        </div><!-- End Service Item -->
-
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                                <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                            </div>
-                        </div><!-- End Service Item -->
-
-                        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-                            <div class="service-item position-relative">
-                                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                            </div>
-                        </div><!-- End Service Item -->
-
-                    </div>
-
-                </div>
-            </div><!-- End Featured Services Section --> --}}
-        <!-- ======= Clients Section ======= -->
-        {{-- <div id="clients" class="clients mt-5" data-aos="fade-up">
-            <div class="container" data-aos="zoom-out">
-
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-1.png') }}"
-        class="img-fluid" alt=""></div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-2.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-3.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-4.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-5.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-6.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-7.png') }}" class="img-fluid" alt="">
-        </div>
-        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-8.png') }}" class="img-fluid" alt="">
-        </div>
-        </div>
-        </div>
-
-        </div>
-        </div><!-- End Clients Section -->
-        --}}
-        <!-- ======= Call To Action Section ======= -->
         <section id="cta" class="cta">
             <div class="container" data-aos="zoom-out">
 
@@ -886,7 +892,8 @@
                     <div
                         class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
                         <h3>Join the <em>Brosy</em> Community Today!</h3>
-                        <p style="text-align: justify"> Transform your farming and aquaculture ventures with us. Take advantage of our exceptional
+                        <p style="text-align: justify"> Transform your farming and aquaculture ventures with us. Take
+                            advantage of our exceptional
                             products and expert knowledge to maximize your yields, minimize your efforts, and contribute
                             to a greener tomorrow.</p>
                         <a class="cta-btn align-self-start" href="#">Call Now</a>
@@ -894,8 +901,7 @@
 
                     <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
                         <div class="img">
-                            <img src="{{ asset('assets/img/cta.jpg') }}"
-                                alt="" class="img-fluid">
+                            <img src="{{ asset('assets/img/cta.jpg') }}" alt="" class="img-fluid">
                         </div>
                     </div>
 
@@ -967,7 +973,11 @@
                                 </h3>
                                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        We offer a comprehensive range of products to support agriculture and aquaculture, including Plant Growth Promoters, Bio Fertilizers, Bio Pesticides, Bio Fungicides, Micronutrients, Soil Conditioners, Suspension Concentrates, and Probiotics. Our products are designed to nurture growth and enhance yields in these industries.
+                                        We offer a comprehensive range of products to support agriculture and
+                                        aquaculture, including Plant Growth Promoters, Bio Fertilizers, Bio Pesticides,
+                                        Bio Fungicides, Micronutrients, Soil Conditioners, Suspension Concentrates, and
+                                        Probiotics. Our products are designed to nurture growth and enhance yields in
+                                        these industries.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -982,7 +992,11 @@
                                 </h3>
                                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Yes, our products are formulated with a strong commitment to environmental sustainability and responsible farming practices. They are designed to minimize harm to the environment while promoting healthy crop growth and aquaculture systems. We prioritize eco-friendly solutions for sustainable agriculture and aquaculture.
+                                        Yes, our products are formulated with a strong commitment to environmental
+                                        sustainability and responsible farming practices. They are designed to minimize
+                                        harm to the environment while promoting healthy crop growth and aquaculture
+                                        systems. We prioritize eco-friendly solutions for sustainable agriculture and
+                                        aquaculture.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -997,7 +1011,9 @@
                                 </h3>
                                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        You can purchase our products through our authorized distributors and retailers. Please call us on the number provided in contact us section for further assistance and inquiries.
+                                        You can purchase our products through our authorized distributors and retailers.
+                                        Please call us on the number provided in contact us section for further
+                                        assistance and inquiries.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -1013,7 +1029,11 @@
                                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        Absolutely! We are committed to helping you get the most out of our products. Our website offers detailed product information and usage guidelines. Additionally, our customer support team is available to answer any specific questions you may have and provide guidance on proper product application for optimal results.
+                                        Absolutely! We are committed to helping you get the most out of our products.
+                                        Our website offers detailed product information and usage guidelines.
+                                        Additionally, our customer support team is available to answer any specific
+                                        questions you may have and provide guidance on proper product application for
+                                        optimal results.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -1028,7 +1048,11 @@
                                 </h3>
                                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Yes, we are committed to environmentally sustainable agriculture. Our Bio Fertilizers, Bio Pesticides, and Bio Fungicides are formulated with eco-friendly ingredients that promote healthy crop growth while minimizing harm to the environment. We prioritize sustainable farming practices to protect both your crops and the planet.
+                                        Yes, we are committed to environmentally sustainable agriculture. Our Bio
+                                        Fertilizers, Bio Pesticides, and Bio Fungicides are formulated with eco-friendly
+                                        ingredients that promote healthy crop growth while minimizing harm to the
+                                        environment. We prioritize sustainable farming practices to protect both your
+                                        crops and the planet.
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -1069,7 +1093,8 @@
 
                         <div class="C">
                             <h3>Get in touch</h3>
-                            <p style="text-align: justify">Have questions or need assistance with our products or services? We're here to help! Feel free to reach out to us anytime.</p>
+                            <p style="text-align: justify">Have questions or need assistance with our products or
+                                services? We're here to help! Feel free to reach out to us anytime.</p>
 
                             <div class="info-item d-flex">
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -1101,7 +1126,8 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <form action="{{ route('send-email') }}" method="post" role="form" class="laravel-email-form" id="laravel-email-form">
+                        <form action="{{ route('send-email') }}" method="post" role="form" class="laravel-email-form"
+                            id="laravel-email-form">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
@@ -1185,7 +1211,8 @@
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Our Newsletter</h4>
-                        <p style="text-align: justify">Join our newsletter to receive exclusive content and valuable tips delivered right to your inbox.</p>
+                        <p style="text-align: justify">Join our newsletter to receive exclusive content and valuable
+                            tips delivered right to your inbox.</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -1239,63 +1266,63 @@
     <script src="{{ asset('assets/js/lottie.js') }}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-    var emailForm = document.getElementById('laravel-email-form');
-    var sentMessage = document.querySelector('.sent-message');
-    var errorMessage = document.querySelector('.error-message');
-    var loadingIndicator = document.querySelector('.loading');
+            var emailForm = document.getElementById('laravel-email-form');
+            var sentMessage = document.querySelector('.sent-message');
+            var errorMessage = document.querySelector('.error-message');
+            var loadingIndicator = document.querySelector('.loading');
 
 
-    emailForm.addEventListener('submit', function (e) {
-        e.preventDefault(); // Prevent the default form submission
+            emailForm.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent the default form submission
 
-        var formData = new FormData(emailForm);
+                var formData = new FormData(emailForm);
 
-        loadingIndicator.style.display = 'block';
+                loadingIndicator.style.display = 'block';
 
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', emailForm.getAttribute('action'), true);
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', emailForm.getAttribute('action'), true);
 
-        // Set up the request headers (optional, depending on your needs)
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        xhr.setRequestHeader('Accept', 'application/json');
+                // Set up the request headers (optional, depending on your needs)
+                xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                xhr.setRequestHeader('Accept', 'application/json');
 
-        xhr.onload = function () {
-            loadingIndicator.style.display = 'none';
-            if (xhr.status === 200) {
-                var response = JSON.parse(xhr.responseText);
+                xhr.onload = function () {
+                    loadingIndicator.style.display = 'none';
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
 
-                // Handle the success response here
-                sentMessage.textContent = response.message;
-                sentMessage.style.display = 'block';
+                        // Handle the success response here
+                        sentMessage.textContent = response.message;
+                        sentMessage.style.display = 'block';
 
-                // Clear the error message if it was previously displayed
-                errorMessage.style.display = 'none';
-            } else {
-                loadingIndicator.style.display = 'none';
-                var errorResponse = JSON.parse(xhr.responseText);
+                        // Clear the error message if it was previously displayed
+                        errorMessage.style.display = 'none';
+                    } else {
+                        loadingIndicator.style.display = 'none';
+                        var errorResponse = JSON.parse(xhr.responseText);
 
-                // Handle any errors
-                errorMessage.textContent = errorResponse.message;
-                errorMessage.style.display = 'block';
+                        // Handle any errors
+                        errorMessage.textContent = errorResponse.message;
+                        errorMessage.style.display = 'block';
 
-                // Clear the success message if it was previously displayed
-                sentMessage.style.display = 'none';
-            }
-        };
+                        // Clear the success message if it was previously displayed
+                        sentMessage.style.display = 'none';
+                    }
+                };
 
-        xhr.onerror = function () {
-            // Handle network errors
-            errorMessage.textContent = 'An error occurred while sending the request.';
-            errorMessage.style.display = 'block';
+                xhr.onerror = function () {
+                    // Handle network errors
+                    errorMessage.textContent = 'An error occurred while sending the request.';
+                    errorMessage.style.display = 'block';
 
-            // Clear the success message if it was previously displayed
-            sentMessage.style.display = 'none';
-        };
+                    // Clear the success message if it was previously displayed
+                    sentMessage.style.display = 'none';
+                };
 
-        // Send the form data
-        xhr.send(formData);
-    });
-});
+                // Send the form data
+                xhr.send(formData);
+            });
+        });
 
     </script>
 

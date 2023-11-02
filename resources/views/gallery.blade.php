@@ -46,7 +46,7 @@
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 {{-- <h1>Brosy Industries  </h1> --}}
             </a>
-            <a href="{{ url('/') }}" class="nav-link scrollto"><button class="btn nav-btn"><i class="bi bi-arrow-left"></i> Back to Home</button></a>
+            <a href="{{ url('/') }}" class=""><button class="btn nav-btn-back"><i class="bi bi-arrow-left"></i> Back to Home</button></a>
             {{-- <nav id="navbar" class="navbar">
 
                 <ul>

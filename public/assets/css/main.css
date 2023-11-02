@@ -2306,6 +2306,7 @@ section {
   font-weight: 600;
 }
 
+
 .contact .laravel-email-form .loading {
   display: none;
   background: var(--color-white);
@@ -3209,7 +3210,7 @@ section {
 .nav-btn:focus {
   font-size: 16px;
   color: var(--color-white);
-  background: var(--color-primary);
+  background: #356850;
   padding: 8px 23px;
   border-radius: 4px;
   transition: 0.3s;
@@ -3219,9 +3220,111 @@ section {
 .nav-btn:hover,
 .nav-btn:focus:hover {
   color: var(--color-white);
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: #356850;
+  opacity: 0.85;
 }
 
 .nav-btn bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
     vertical-align: -0.225em;
 }
+
+.nav-btn-back,
+.nav-btn-back:focus {
+  font-size: 16px;
+  color: var(--color-white);
+  background: var(--color-primary);
+  padding: 8px 23px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+}
+
+.nav-btn-back:hover,
+.nav-btn-back:focus:hover {
+  color: var(--color-white);
+  background: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.nav-btn-back bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    vertical-align: -0.225em;
+}
+
+.img-carousel {
+    width: 100%;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+
+.accordion > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+  }
+
+  .accordion .content {
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+  }
+
+  .accordion > input[type="checkbox"]:checked ~ .content {
+    height: auto;
+    overflow: visible;
+  }
+
+  .accordion label {
+    display: block;
+  }
+
+
+  .accordion {
+    margin-bottom: 1em;
+  }
+
+  .accordion > input[type="checkbox"]:checked ~ .content {
+    padding: 15px;
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+  }
+
+  .accordion .handle {
+    margin: 0;
+    font-size: 1.125em;
+    line-height: 1.2em;
+  }
+
+  .accordion label {
+    color: #333;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 15px;
+    background: #e8e8e8;
+  }
+
+  .accordion label:hover,
+  .accordion label:focus {
+    background: #d8d8d8;
+  }
+
+  .accordion .handle label:before {
+    font-family: 'fontawesome';
+    content: "\f054";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .58em;
+    line-height: 1.556em;
+    vertical-align: middle;
+  }
+
+  .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+    content: "\f078";
+  }
+
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion p:last-child {
+    margin-bottom: 0;
+  }
